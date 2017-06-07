@@ -1,5 +1,48 @@
 ---
 title: chapter_5_盒子模型
-date: 2017-06-06 21:52:17
-tags:
+date: 2017-06-07 19:52:17
+tags: css
 ---
+
+5.1 CSS盒子模型  
+**每个元素都可以看成一个盒子**  
+盒子模型由content、padding、margin、border四个属性组成  
+content：内容，可以是文字或图片    
+margin：外边距，用于定义页面中元素与元素之间的距离    
+padding: 内边距（也称“补白”），用于定义内容与边框之间的距离  
+border: 边框 
+>内容区：  
+内容区是CSS盒子模型的中心，有三个属性：width、height、overflow  
+width和height是针对内容区而言，不包括padding部分  
+overflow溢出属性，用来处理内容信息过多而超出内容区所占范围。  
+
+5.2 深入border  
+**“border:0”和“border:none”的区别主要体现在两点：性能差异和兼容差异**
+  
+5.2.1 性能差异 
+ 
+* "border:0“ 表示把border定义为0px，浏览器会对border进行渲染，需要占用内存
+* "border:none" 表示把border定义为”none(无)“，浏览器对改属性不会作出渲染，不需要占用内存  
+
+5.2.2 兼容差异  
+兼容差异只存在于IE6和IE7的< input type="button" / >标签以及< button >标签中，其他浏览器不存在兼容问题  
+"border:0“ 在所有浏览器中的效果都一样，都是把边框隐藏掉（不是去掉）   
+"border:none"  对IE6和IE7按钮的边框无效，在其他浏览器中会去掉按钮的边框
+  
+5.3 负margin使用技巧  
+
+* 图片与文字对齐
+* 自适应两列布局
+* 元素垂直居中
+* tab选项卡
+
+5.4 overflow使用  
+
+* "overflow:scroll" 显示滚动条  
+* "overflow:hidden" 清除浮动，隐藏溢出内容，以免影响布局，不好的一点是这部分的内容完全不显示，比如图片只显示了一部分  
+
+>使用clear属性清除浮动的缺点是增加了一个多余标签
+>"overflow:hidden" 是一个小炸弹，它会将超出父元素部分的内容隐藏
+
+
+
