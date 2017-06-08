@@ -1,7 +1,7 @@
 ---
 title: chapter-4-CSS规范
 date: 2017-06-06 21:22:25
-tags: [html, css]
+tags: html
 ---
 
 4.1 命名规范：  

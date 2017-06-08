@@ -1,7 +1,7 @@
 ---
 title: chapter-3-CSS基础知识
 date: 2017-06-02 21:46:44
-tags: [html,css]
+tags: html
 ---
 
 ## CSS基础知识

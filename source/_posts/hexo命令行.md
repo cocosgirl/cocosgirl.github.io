@@ -1,7 +1,7 @@
 ---
 title: hexo命令行
 date: 2017-06-02 19:29:38
-tags: [hexo,命令行]
+tags: 命令行
 ---
 
 1. 新建页面的hexo命令是：  

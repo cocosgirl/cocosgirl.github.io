@@ -1,7 +1,7 @@
 ---
 title: chapter-2-语义化
 date: 2017-06-02 21:33:51
-tags: [html,css]
+tags: html
 ---
 
 # 第二章

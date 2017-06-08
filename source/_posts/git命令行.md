@@ -1,7 +1,7 @@
 ---
 title: git命令行  
 date: 2017-06-02 17:25:55
-tags: [git,命令行]
+tags: 命令行
 ---
 
 1. git clone

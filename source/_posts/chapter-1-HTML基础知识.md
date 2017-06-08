@@ -1,7 +1,7 @@
 ---
 title: chapter-1-HTML基础知识
 date: 2017-06-02 21:25:55
-tags: [html,css]
+tags: html
 ---
 
 # HTML基础知识
