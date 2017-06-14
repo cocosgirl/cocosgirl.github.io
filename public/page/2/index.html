@@ -499,8 +499,9 @@
 </blockquote>
 <h1 id="5-阅读全文"><a href="#5-阅读全文" class="headerlink" title="5. 阅读全文"></a>5. 阅读全文</h1><p>在喜欢的位置添加阅读全文的功能，主题会自动识别这个标签：</p>
 <p>以上是文章摘要<br>&lt;!--more--><br>以下是余下全文  </p>
-<h1 id="6-转义字符要多加一个"><a href="#6-转义字符要多加一个" class="headerlink" title="6. 转义字符要多加一个\"></a>6. 转义字符要多加一个\</h1><p>\\ 反斜杠<br>\` 反引号<br>\* 星号<br>\_ 下划线<br>\{\} 大括号<br>\[\] 中括号<br>\(\) 小括号<br>\# 井号<br>\+ 加号<br>\- 减号<br>\. 英文句号<br>\! 感叹号  </p>
-<h1 id="7-列表"><a href="#7-列表" class="headerlink" title="7. 列表"></a>7. 列表</h1><h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><p>* 无序列表1<br>+ 无序列表2<br>- 无序列表3 </p>
+<h1 id="6-不能使用的字符"><a href="#6-不能使用的字符" class="headerlink" title="6. 不能使用的字符"></a>6. 不能使用的字符</h1><p>hexo g编译不通过的字符：两对大括号，或者大括号中间包含百分号，每个符号之间留空格可以编译通过，不留空格编译不通过<br>例如：{ { aaa } }  和 { % bbb % }</p>
+<h1 id="7-转义字符要多加一个"><a href="#7-转义字符要多加一个" class="headerlink" title="7. 转义字符要多加一个\"></a>7. 转义字符要多加一个\</h1><p>\\ 反斜杠<br>\` 反引号<br>\* 星号<br>\_ 下划线<br>\{\} 大括号<br>\[\] 中括号<br>\(\) 小括号<br>\# 井号<br>\+ 加号<br>\- 减号<br>\. 英文句号<br>\! 感叹号  </p>
+<h1 id="8-列表"><a href="#8-列表" class="headerlink" title="8. 列表"></a>8. 列表</h1><h2 id="无序列表"><a href="#无序列表" class="headerlink" title="无序列表"></a>无序列表</h2><p>* 无序列表1<br>+ 无序列表2<br>- 无序列表3 </p>
 <blockquote>
 <ul>
 <li>无序列表1  </li>
@@ -516,7 +517,7 @@
 <blockquote>
 <p>1.第一项<br>2.第二项    </p>
 </blockquote>
-<h1 id="8-链接"><a href="#8-链接" class="headerlink" title="8. 链接"></a>8. 链接</h1><p>Markdown有两种链接方式：Inline以及Reference  </p>
+<h1 id="9-链接"><a href="#9-链接" class="headerlink" title="9. 链接"></a>9. 链接</h1><p>Markdown有两种链接方式：Inline以及Reference  </p>
 <h2 id="文字链接："><a href="#文字链接：" class="headerlink" title="文字链接："></a>文字链接：</h2><p>Inline:<br>[谷歌](<a href="https://www.google.com" target="_blank" rel="external">https://www.google.com</a>)<br>Reference:<br>[谷歌][google_url]<br>[google_url]:<a href="https://www.google.com" target="_blank" rel="external">https://www.google.com</a>  </p>
 <blockquote>
 <p>Inline:<br><a href="https://www.google.com" target="_blank" rel="external">谷歌</a><br>Reference:<br><a href="http://www.google.rw/images/srpr/logo4w.png" target="_blank" rel="external">谷歌</a>  </p>
