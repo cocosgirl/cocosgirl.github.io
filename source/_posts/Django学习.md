@@ -29,21 +29,21 @@ DJango的亮点之一--基于数据库的网站开发，必须安装某种类型
 5. 启动服务器命令：  
 python manage.py runserver #默认端口8000  
 python manage.py runserver 8080  #启动并修改服务器端口  
-python manage.py runserver 0.0.0.0:8080  #改变服务器监听的IP地址，让Django监听所有网络接口，其他电脑也可以连接到开发服务器了。（要和其他开发人员共享同一开发站点的话，该功能特别有用）
+python manage.py runserver 0.0.0.0:8080  #改变服务器监听的IP地址，让Django监听所有网络接口，其他电脑也可以连接到开发服务器了。\(要和其他开发人员共享同一开发站点的话，该功能特别有用\)
 
 6. 修改时区  
 Django 包含一个默认为 America/Chicago 的 TIME_ZONE 设置，可以在 settings.py 文件中修改成你想要的时区。  
 例如：TIME_ZONE = 'Asia/Shanghai'
 
 7. python后端传值到html页面
-> 用两个大括号括起来的文字（例如 {{ person_name }} ）是变量(variable)  
-> 被大括号和百分号包围的文本(例如 {% if ordered_warranty %} )是 模板标签(template tag)  (例如：if，for等)
+> 用两个大括号括起来的文字\(例如 \{ \{ person_name \} \} \)是变量\(variable\)  
+> 被大括号和百分号包围的文本(例如 \{ % if ordered_warranty % \} \)是 模板标签\(template tag\)  \(例如：if，for等\)
 
 8. 当模板系统在变量名中遇到点时，按照以下顺序尝试进行查找：  
- * 字典查找 （比如 foo["bar"] )
- * 属性查找 (比如 foo.bar )
- * 方法调用 （比如 foo.bar() )
- * 列表类型索引查找 (比如 foo[bar] )
+ * 字典查找 \(比如 foo["bar"] \)
+ * 属性查找 \(比如 foo.bar \)
+ * 方法调用 \(比如 foo.bar() \)
+ * 列表类型索引查找 \(比如 foo[bar] \)
 
 9. sql操作：  
  9.1 数据过滤，使用 filter() 方法：   
@@ -60,6 +60,3 @@ Django 包含一个默认为 America/Chicago 的 TIME_ZONE 设置，可以在 se
  
  排序
  > Food.objects.order_by("name")
-
-
-10.  
