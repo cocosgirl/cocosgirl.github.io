@@ -161,8 +161,8 @@ social_icons:
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.jpg
 # in site  directory(source/uploads): /uploads/avatar.jpg
-#avatar: /images/myhead.png
-avatar: http://df.dl.shediao.com/cdn37/majiang/images/ads/icon_20161111_jx_fzmj_125_125.png
+avatar: /images/myhead.png
+#avatar: http://df.dl.shediao.com/cdn37/majiang/images/ads/icon_20161111_jx_fzmj_125_125.png
 
 
 # Table Of Contents in the Sidebar
