@@ -1,7 +1,7 @@
 ---
 title: Django学习
 date: 2017-06-07 15:34:28
-tags: Django
+tags: [Django,编程]
 ---
 
 学习参考教程：
