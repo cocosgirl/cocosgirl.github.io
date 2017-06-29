@@ -100,7 +100,7 @@
 <meta property="og:url" content="https://github.com/cocosgirl/cocosgirl.github.io/2017/06/02/git命令行/index.html">
 <meta property="og:site_name" content="cocosgirl">
 <meta property="og:description" content="git clone拉一个分支到当前目录git clone https://github.com/cocosgirl/diana.git  git add把我们要提交的文件的信息添加到索引库中例如：git add html_1_chapter.md  git commitgit将依据索引库中的内容来进行文件的提交例如：git commit html_1_chapter.md -m “测试本地提交”">
-<meta property="og:updated_time" content="2017-06-08T10:41:10.000Z">
+<meta property="og:updated_time" content="2017-06-29T02:38:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git命令行">
 <meta name="twitter:description" content="git clone拉一个分支到当前目录git clone https://github.com/cocosgirl/diana.git  git add把我们要提交的文件的信息添加到索引库中例如：git add html_1_chapter.md  git commitgit将依据索引库中的内容来进行文件的提交例如：git commit html_1_chapter.md -m “测试本地提交”">
@@ -349,6 +349,10 @@
 <li><p>git commit<br>git将依据索引库中的内容来进行文件的提交<br>例如：git commit html_1_chapter.md -m “测试本地提交”<br>本地删除文件提交：<br>git commit -a -m “删除不要的文件”</p>
 </li>
 <li><p>git push<br>提交完以后发布<br>发布到分支：<br>例如：git push -u <a href="https://github.com/cocosgirl/cocosgirl.github.io">https://github.com/cocosgirl/cocosgirl.github.io</a> master  </p>
+</li>
+<li><p>合并分支<br>git pull origin hexo MERGE_HEAD origin/master  </p>
+</li>
+<li><p>设置当前分支<br>首先git checkout -b origin/master<br>其次git checkout master<br>即可恢复到master repository的状态，然后就可以pull了</p>
 </li>
 </ol>
 
