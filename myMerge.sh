@@ -15,6 +15,7 @@ git checkout origin/hexo page
 git checkout origin/hexo pageName
 git checkout origin/hexo tags
 git checkout origin/hexo index.html
+git add *
 git commit -m "合并分支$dt"
 git push -u origin master
 echo 'end merge--------------'
