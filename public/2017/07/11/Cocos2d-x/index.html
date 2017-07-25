@@ -77,7 +77,7 @@
 <link href="/cocosgirl.github.io/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="javascript,html,css,java,python" />
+  <meta name="keywords" content="编程,游戏," />
 
 
 
@@ -93,15 +93,17 @@
 
 
 
-<meta name="description" content="愿有岁月可回首">
-<meta property="og:type" content="website">
-<meta property="og:title" content="cocosgirl">
-<meta property="og:url" content="https://github.com/cocosgirl/cocosgirl.github.io/page/3/index.html">
+<meta name="description" content="基础：一个游戏可以有多个场景，每个场景可以包含多个不同的层，每层可拥有任意个游戏节点（常见的是精灵，但也可以是层、菜单和文本等）。   继承关系：cc.Class&amp;lt;–cc.Node&amp;lt;–cc.NodeRGBA&amp;lt;–cc.Sprite（与Java中的Object一样，所有类都要直接或间接继承自Class）  === 严格等于：不仅值要相等，类型也要相等!== 非严格等于，与===恰恰相">
+<meta name="keywords" content="编程,游戏">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Cocos2d-x">
+<meta property="og:url" content="https://github.com/cocosgirl/cocosgirl.github.io/2017/07/11/Cocos2d-x/index.html">
 <meta property="og:site_name" content="cocosgirl">
-<meta property="og:description" content="愿有岁月可回首">
+<meta property="og:description" content="基础：一个游戏可以有多个场景，每个场景可以包含多个不同的层，每层可拥有任意个游戏节点（常见的是精灵，但也可以是层、菜单和文本等）。   继承关系：cc.Class&amp;lt;–cc.Node&amp;lt;–cc.NodeRGBA&amp;lt;–cc.Sprite（与Java中的Object一样，所有类都要直接或间接继承自Class）  === 严格等于：不仅值要相等，类型也要相等!== 非严格等于，与===恰恰相">
+<meta property="og:updated_time" content="2017-07-24T13:25:07.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="cocosgirl">
-<meta name="twitter:description" content="愿有岁月可回首">
+<meta name="twitter:title" content="Cocos2d-x">
+<meta name="twitter:description" content="基础：一个游戏可以有多个场景，每个场景可以包含多个不同的层，每层可拥有任意个游戏节点（常见的是精灵，但也可以是层、菜单和文本等）。   继承关系：cc.Class&amp;lt;–cc.Node&amp;lt;–cc.NodeRGBA&amp;lt;–cc.Sprite（与Java中的Object一样，所有类都要直接或间接继承自Class）  === 严格等于：不仅值要相等，类型也要相等!== 非严格等于，与===恰恰相">
 
 
 
@@ -129,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="https://github.com/cocosgirl/cocosgirl.github.io/page/3/"/>
+  <link rel="canonical" href="https://github.com/cocosgirl/cocosgirl.github.io/2017/07/11/Cocos2d-x/"/>
 
 
 
 
 
-  <title>cocosgirl</title>
+  <title>Cocos2d-x | cocosgirl</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -161,9 +163,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-   page-home 
- ">
+  <div class="container sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -266,9 +266,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -277,7 +277,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/06/02/git命令行/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/07/11/Cocos2d-x/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zyy">
@@ -294,9 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/cocosgirl.github.io/2017/06/02/git命令行/" itemprop="url">git命令行</a></h1>
+          <h1 class="post-title" itemprop="name headline">Cocos2d-x</h1>
         
 
         <div class="post-meta">
@@ -308,8 +306,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-02T17:25:55+08:00">
-                2017-06-02
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-11T18:48:19+08:00">
+                2017-07-11
               </time>
             
 
@@ -343,65 +341,100 @@
       
 
       
+        <p>基础：一个游戏可以有多个场景，每个场景可以包含多个不同的层，每层可拥有任意个游戏节点（常见的是精灵，但也可以是层、菜单和文本等）。  </p>
+<p>继承关系：cc.Class&lt;–cc.Node&lt;–cc.NodeRGBA&lt;–cc.Sprite<br>（与Java中的Object一样，所有类都要直接或间接继承自Class） </p>
+<p>=== 严格等于：不仅值要相等，类型也要相等<br>!== 非严格等于，与===恰恰相反  </p>
+<p>导演：cc.Director用于管理场景，采用单例模式，整个过程中只有一个实例对象。<br>场景类：cc.Class&lt;–cc.Node&lt;–cc.Scene&lt;–cc.TransitionScene<br>层：cc.Class&lt;–cc.Node&lt;–cc.Layer&lt;–cc.LayerColor&lt;–cc.LayerGrandient<br>cc.LabelTTF是最简单的标签类：cc.Class&lt;–cc.Node&lt;–cc.NodeRGBA&lt;–cc.Sprite&lt;–cc.LabelTTF  </p>
+<p>引用框架常用赋值写法： var chess = chess || {}; (假如chess已经被定义，就用原来的值，chess未被定义，就赋值{})</p>
+<p>精灵的性能优化  </p>
+<ul>
+<li>使用纹理图集  </li>
+<li>使用精灵帧缓存  <blockquote>
+<p>纹理缓存（TextureCache）<br>精灵帧缓存（SpriteFrameCache）</p>
+</blockquote>
+</li>
+</ul>
+<p>场景与层：<br>通过导演类cc.director切换场景:   </p>
+<ul>
+<li>runScene(scene): 运行场景，只能在启动第一个场景时调用该函数。如果已经有一个场景运行则不能调用该函数。  </li>
+<li>pushScene(scene): 切换到下一个场景，将当前场景挂起放入到场景堆栈中，然后切换到下一个场景中。（不释放和销毁场景，原来的场景状态可以保持，但是不能同时有太多的场景对象运行cc.director.pushScene(new SettingScene());）  </li>
+<li>popScene()：与pushScene配合使用，可以回到根场景。(cc.director.popScene();)   </li>
+<li>popToRootScene(): 与pushScene配合使用，可以回到根场景。  </li>
+</ul>
+<p>设计分辨率设置：cc.view.setDesignResolutionSize(640,960,cc.ResolutionPolicy.NO_BORDER);  //640和960是设计分辨率宽高，背景图片是640*960</p>
+
+      
+    </div>
+
+    <div>
+      
         
-          
-            <ol>
-<li><p>git clone<br>拉一个分支到当前目录<br>git clone <a href="https://github.com/cocosgirl/diana.git">https://github.com/cocosgirl/diana.git</a></p>
-</li>
-<li><p>git add<br>把我们要提交的文件的信息添加到索引库中<br>例如：git add html_1_chapter.md</p>
-</li>
-<li><p>git commit<br>git将依据索引库中的内容来进行文件的提交<br>例如：git commit html_1_chapter.md -m “测试本地提交”<br>本地删除文件提交：<br>git commit -a -m “删除不要的文件”</p>
-</li>
-<li><p>git push<br>提交完以后发布<br>发布到分支：<br>例如：git push -u <a href="https://github.com/cocosgirl/cocosgirl.github.io">https://github.com/cocosgirl/cocosgirl.github.io</a> master  </p>
-</li>
-<li><p>合并分支<br>git pull origin hexo MERGE_HEAD origin/master  </p>
-</li>
-<li><p>设置当前分支<br>首先git checkout -b origin/master<br>其次git checkout master<br>即可恢复到master repository的状态，然后就可以pull了  </p>
-</li>
-<li><p>git其他常用命令参考<br><a href="http://www.cnblogs.com/cspku/articles/Git_cmds.html" target="_blank" rel="external">http://www.cnblogs.com/cspku/articles/Git_cmds.html</a></p>
-</li>
-</ol>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
-      
-    </div>
-
-    <div>
       
     </div>
 
     <footer class="post-footer">
       
-
+        <div class="post-tags">
+          
+            <a href="/cocosgirl.github.io/tags/编程/" rel="tag"># 编程</a>
+          
+            <a href="/cocosgirl.github.io/tags/游戏/" rel="tag"># 游戏</a>
+          
+        </div>
       
 
       
+      
+      
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/cocosgirl.github.io/2017/06/22/我为什么去健身/" rel="next" title="我为什么去健身">
+                <i class="fa fa-chevron-left"></i> 我为什么去健身
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/cocosgirl.github.io/2017/07/12/2d游戏工具使用/" rel="prev" title="2d游戏工具使用">
+                2d游戏工具使用 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
       
-        <div class="post-eof"></div>
+
+      
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/cocosgirl.github.io/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/cocosgirl.github.io/">1</a><a class="page-number" href="/cocosgirl.github.io/page/2/">2</a><span class="page-number current">3</span>
-  </nav>
-
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -409,6 +442,10 @@
 
 
           
+  <div class="comments" id="comments">
+    
+  </div>
+
 
         </div>
         
@@ -602,10 +639,10 @@
 
 
   
-    <script type="text/javascript" src="/cocosgirl.github.io/js/src/scrollspy.js?v=5.1.1"></script>
+  <script type="text/javascript" src="/cocosgirl.github.io/js/src/scrollspy.js?v=5.1.1"></script>
 <script type="text/javascript" src="/cocosgirl.github.io/js/src/post-details.js?v=5.1.1"></script>
 
-  
+
 
   
 

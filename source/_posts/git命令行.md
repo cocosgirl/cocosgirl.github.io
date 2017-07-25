@@ -29,4 +29,7 @@ git pull origin hexo MERGE_HEAD origin/master
 6. 设置当前分支  
 首先git checkout -b origin/master
 其次git checkout master
-即可恢复到master repository的状态，然后就可以pull了
+即可恢复到master repository的状态，然后就可以pull了  
+
+7. git其他常用命令参考
+http://www.cnblogs.com/cspku/articles/Git_cmds.html
