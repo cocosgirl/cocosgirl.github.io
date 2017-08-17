@@ -10,4 +10,10 @@ tags: 编程
 2. 数据类型：  
 	javascript数据类型：数值、布尔、字符串、对象、数组类型。
 	
-3. 
+3. 数组声明与初始化方式： 
+	var studentList = ["张三","李四","王五"];  
+	var studentList = new Array("张三","李四","王五");  
+	var studentList = new Array();    
+	studentList[0] = "张三";
+	
+4.  
