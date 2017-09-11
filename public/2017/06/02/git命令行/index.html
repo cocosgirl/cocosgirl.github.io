@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="git clone拉一个分支到当前目录git clone https://github.com/cocosgirl/diana.git  git add把我们要提交的文件的信息添加到索引库中例如：git add html_1_chapter.md  git commitgit将依据索引库中的内容来进行文件的提交例如：git commit html_1_chapter.md -m “测试本地提交”">
+<meta name="description" content="git clone拉一个分支到当前目录git clone https://github.com/cocosgirl/diana.git  git add .把我们要提交的文件的信息添加到索引库中例如：git add html_1_chapter.md  git commitgit将依据索引库中的内容来进行文件的提交例如：git commit html_1_chapter.md -m “测试本地提">
 <meta name="keywords" content="命令行">
 <meta property="og:type" content="article">
 <meta property="og:title" content="git命令行">
 <meta property="og:url" content="https://github.com/cocosgirl/cocosgirl.github.io/2017/06/02/git命令行/index.html">
 <meta property="og:site_name" content="cocosgirl">
-<meta property="og:description" content="git clone拉一个分支到当前目录git clone https://github.com/cocosgirl/diana.git  git add把我们要提交的文件的信息添加到索引库中例如：git add html_1_chapter.md  git commitgit将依据索引库中的内容来进行文件的提交例如：git commit html_1_chapter.md -m “测试本地提交”">
-<meta property="og:updated_time" content="2017-07-25T06:52:30.000Z">
+<meta property="og:description" content="git clone拉一个分支到当前目录git clone https://github.com/cocosgirl/diana.git  git add .把我们要提交的文件的信息添加到索引库中例如：git add html_1_chapter.md  git commitgit将依据索引库中的内容来进行文件的提交例如：git commit html_1_chapter.md -m “测试本地提">
+<meta property="og:updated_time" content="2017-09-11T13:13:49.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="git命令行">
-<meta name="twitter:description" content="git clone拉一个分支到当前目录git clone https://github.com/cocosgirl/diana.git  git add把我们要提交的文件的信息添加到索引库中例如：git add html_1_chapter.md  git commitgit将依据索引库中的内容来进行文件的提交例如：git commit html_1_chapter.md -m “测试本地提交”">
+<meta name="twitter:description" content="git clone拉一个分支到当前目录git clone https://github.com/cocosgirl/diana.git  git add .把我们要提交的文件的信息添加到索引库中例如：git add html_1_chapter.md  git commitgit将依据索引库中的内容来进行文件的提交例如：git commit html_1_chapter.md -m “测试本地提">
 
 
 
@@ -344,7 +344,7 @@
         <ol>
 <li><p>git clone<br>拉一个分支到当前目录<br>git clone <a href="https://github.com/cocosgirl/diana.git">https://github.com/cocosgirl/diana.git</a></p>
 </li>
-<li><p>git add<br>把我们要提交的文件的信息添加到索引库中<br>例如：git add html_1_chapter.md</p>
+<li><p>git add .<br>把我们要提交的文件的信息添加到索引库中<br>例如：git add html_1_chapter.md</p>
 </li>
 <li><p>git commit<br>git将依据索引库中的内容来进行文件的提交<br>例如：git commit html_1_chapter.md -m “测试本地提交”<br>本地删除文件提交：<br>git commit -a -m “删除不要的文件”</p>
 </li>
@@ -353,6 +353,24 @@
 <li><p>合并分支<br>git pull origin hexo MERGE_HEAD origin/master  </p>
 </li>
 <li><p>设置当前分支<br>首先git checkout -b origin/master<br>其次git checkout master<br>即可恢复到master repository的状态，然后就可以pull了  </p>
+</li>
+<li><p>git help &lt;命令&gt;<br>查找命令的帮助信息  </p>
+</li>
+<li><p>git log<br>查看git的日志信息</p>
+</li>
+<li><p>git init<br>创建一个新的代码库或者初始化一个已存在的代码库</p>
+</li>
+<li><p>git rm<br>删除索引或代码库中的文件  </p>
+</li>
+<li><p>git status<br>显示当前git的状态，包括增删改，但是没有提交的信息</p>
+</li>
+<li><p>初始化**目录为本地代码库<br>cd **<br>git init   </p>
+</li>
+<li><p>git fetch<br>从服务器代码库获取数据<br>eg. git fetch origin  </p>
+</li>
+<li><p>git merge origin/master<br>合并origin/master到本地master分支</p>
+</li>
+<li><p>git pull 命令是git fetch和git merge命令的组合<br>eg. git pull origin master 其中origin是远程代码库名，master是要合并的本地分支</p>
 </li>
 <li><p>git其他常用命令参考<br><a href="http://www.cnblogs.com/cspku/articles/Git_cmds.html" target="_blank" rel="external">http://www.cnblogs.com/cspku/articles/Git_cmds.html</a></p>
 </li>
