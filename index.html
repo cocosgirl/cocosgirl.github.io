@@ -277,6 +277,254 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/08/31/svn命令行/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zyy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/cocosgirl.github.io/images/myhead.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cocosgirl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/cocosgirl.github.io/2017/08/31/svn命令行/" itemprop="url">svn命令行</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-31T17:49:38+08:00">
+                2017-08-31
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li><p>从SVN上检出<br> svn checkout svnPath  </p>
+</li>
+<li><p>提交svn<br> svn commit * -m “message”</p>
+</li>
+<li><p>误删除文件<br>直接svn up<br>或 svn revert -r version  </p>
+</li>
+<li><p>删除文件后提交<br> svn delete XX<br> 再 svn ci -m “message”    </p>
+</li>
+<li><p>查看本地改动了哪些文件<br> svn st</p>
+</li>
+<li><p>本地文件和svn上文件对比<br> svn diff fileName</p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/08/29/Cocos2d-JS开发/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zyy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/cocosgirl.github.io/images/myhead.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cocosgirl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/cocosgirl.github.io/2017/08/29/Cocos2d-JS开发/" itemprop="url">Cocos2d-JS开发</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-29T20:19:00+08:00">
+                2017-08-29
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li><p>cocos2d-js中数据持久化：  </p>
+<ul>
+<li>localStorage: 没有时间限制的数据持久化。（键值对）</li>
+<li>sessionStorage: 针对一个web会话的数据持久化。<br>cocos2d-js不支持cocos2d-x中的属性列表和sqlite数据库。</li>
+</ul>
+</li>
+<li><p>HTTP 与 HTTPS<br> Internet的基本协议是TCP/IP。<br> HTTP超文本传输协议，是无连接协议，每一次请求时建立连接，服务器处理完客户端的请求后，应答给客户端，然后断开连接，不会一直占用网络资源。<br> HTTPS安全超文本传输协议，是超文本传输协议和SSL组合，提供加密通信及网络服务器身份的鉴定。  </p>
+</li>
+<li><p>GET和POST<br> GET是向指定的资源发出请求，送的信息显示在URL后面，GET方法应该只用在读取数据(如静态图片等数据)。（GET方法就像使用明信片给别人写信，接触到的人都可以看到，因此不安全）<br> POST是向指定资源提交数据，请求服务器进行处理。例如：提交表单或者上传文件等。数据被包含在请求体中。（POST方法像把“信内容”装到信封中给别人写信，接触到的人都看不到，因此安全）</p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/08/07/vim常用命令行/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -345,12 +593,12 @@
       
         
           
-            <ol>
+            <ul>
 <li>grep | history  查看历史命令行  </li>
 <li>grep “getFileMd5” . -R  递归查找当前文件夹下内容包含getFileMd5的文件</li>
 <li>find ./ -name js2objectc.h 查找js2objectc.h文件</li>
 <li>chmod 777 openCocos.sh 修改openCocos.sh权限</li>
-</ol>
+</ul>
 
           
         
@@ -604,117 +852,6 @@
 <li></li>
 </ol>
 
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/07/27/Cocos2d-JS开发/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zyy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/cocosgirl.github.io/images/myhead.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="cocosgirl">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/cocosgirl.github.io/2017/07/27/Cocos2d-JS开发/" itemprop="url">Cocos2d-JS开发</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-27T20:19:00+08:00">
-                2017-07-27
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
           
         
       
@@ -1067,117 +1204,6 @@
 <p>一进教室就开始练习各种骑车姿势，对我这么个不爱骑车的人，简直就是摧残，站着骑，坐着骑，不停的加阻力，一节课下来，觉得我活着回去已经很不错了，屁股疼腿疼了一周。  </p>
 <p>就此一次，再没去练过。</p>
 
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/07/25/爵士舞/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zyy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/cocosgirl.github.io/images/myhead.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="cocosgirl">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/cocosgirl.github.io/2017/07/25/爵士舞/" itemprop="url">爵士舞</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-25T10:16:01+08:00">
-                2017-07-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            
           
         
       

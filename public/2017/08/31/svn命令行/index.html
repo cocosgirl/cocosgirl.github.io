@@ -77,7 +77,7 @@
 <link href="/cocosgirl.github.io/css/main.css?v=5.1.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="编程," />
+  <meta name="keywords" content="命令行," />
 
 
 
@@ -93,17 +93,17 @@
 
 
 
-<meta name="description" content="变量命名：不能是保留字，首字符不能是数字，区分大小写，可以是下划线、美元符、字母开头。    数据类型： javascript数据类型：数值、布尔、字符串、对象、数组类型。  数组声明与初始化方式： var studentList = [“张三”,”李四”,”王五”]; var studentList = new Array(“张三”,”李四”,”王五”); var studentList =">
-<meta name="keywords" content="编程">
+<meta name="description" content="从SVN上检出 svn checkout svnPath    提交svn svn commit * -m “message”  误删除文件直接svn up或 svn revert -r version    删除文件后提交 svn delete XX 再 svn ci -m “message”      查看本地改动了哪些文件 svn st  本地文件和svn上文件对比 svn diff fi">
+<meta name="keywords" content="命令行">
 <meta property="og:type" content="article">
-<meta property="og:title" content="javascript学习">
-<meta property="og:url" content="https://github.com/cocosgirl/cocosgirl.github.io/2017/07/27/javascript学习/index.html">
+<meta property="og:title" content="svn命令行">
+<meta property="og:url" content="https://github.com/cocosgirl/cocosgirl.github.io/2017/08/31/svn命令行/index.html">
 <meta property="og:site_name" content="cocosgirl">
-<meta property="og:description" content="变量命名：不能是保留字，首字符不能是数字，区分大小写，可以是下划线、美元符、字母开头。    数据类型： javascript数据类型：数值、布尔、字符串、对象、数组类型。  数组声明与初始化方式： var studentList = [“张三”,”李四”,”王五”]; var studentList = new Array(“张三”,”李四”,”王五”); var studentList =">
-<meta property="og:updated_time" content="2017-08-01T12:53:02.000Z">
+<meta property="og:description" content="从SVN上检出 svn checkout svnPath    提交svn svn commit * -m “message”  误删除文件直接svn up或 svn revert -r version    删除文件后提交 svn delete XX 再 svn ci -m “message”      查看本地改动了哪些文件 svn st  本地文件和svn上文件对比 svn diff fi">
+<meta property="og:updated_time" content="2017-09-01T01:43:25.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="javascript学习">
-<meta name="twitter:description" content="变量命名：不能是保留字，首字符不能是数字，区分大小写，可以是下划线、美元符、字母开头。    数据类型： javascript数据类型：数值、布尔、字符串、对象、数组类型。  数组声明与初始化方式： var studentList = [“张三”,”李四”,”王五”]; var studentList = new Array(“张三”,”李四”,”王五”); var studentList =">
+<meta name="twitter:title" content="svn命令行">
+<meta name="twitter:description" content="从SVN上检出 svn checkout svnPath    提交svn svn commit * -m “message”  误删除文件直接svn up或 svn revert -r version    删除文件后提交 svn delete XX 再 svn ci -m “message”      查看本地改动了哪些文件 svn st  本地文件和svn上文件对比 svn diff fi">
 
 
 
@@ -131,13 +131,13 @@
 
 
 
-  <link rel="canonical" href="https://github.com/cocosgirl/cocosgirl.github.io/2017/07/27/javascript学习/"/>
+  <link rel="canonical" href="https://github.com/cocosgirl/cocosgirl.github.io/2017/08/31/svn命令行/"/>
 
 
 
 
 
-  <title>javascript学习 | cocosgirl</title>
+  <title>svn命令行 | cocosgirl</title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -277,7 +277,7 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/07/27/javascript学习/">
+    <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/08/31/svn命令行/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="zyy">
@@ -294,7 +294,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">javascript学习</h1>
+          <h1 class="post-title" itemprop="name headline">svn命令行</h1>
         
 
         <div class="post-meta">
@@ -306,8 +306,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-27T20:58:03+08:00">
-                2017-07-27
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-08-31T17:49:38+08:00">
+                2017-08-31
               </time>
             
 
@@ -342,13 +342,18 @@
 
       
         <ol>
-<li><p>变量命名：<br>不能是保留字，首字符不能是数字，区分大小写，可以是下划线、美元符、字母开头。  </p>
+<li><p>从SVN上检出<br> svn checkout svnPath  </p>
 </li>
-<li><p>数据类型：<br> javascript数据类型：数值、布尔、字符串、对象、数组类型。</p>
+<li><p>提交svn<br> svn commit * -m “message”</p>
 </li>
-<li><p>数组声明与初始化方式：<br> var studentList = [“张三”,”李四”,”王五”];<br> var studentList = new Array(“张三”,”李四”,”王五”);<br> var studentList = new Array();<br> studentList[0] = “张三”;</p>
+<li><p>误删除文件<br>直接svn up<br>或 svn revert -r version  </p>
 </li>
-<li></li>
+<li><p>删除文件后提交<br> svn delete XX<br> 再 svn ci -m “message”    </p>
+</li>
+<li><p>查看本地改动了哪些文件<br> svn st</p>
+</li>
+<li><p>本地文件和svn上文件对比<br> svn diff fileName</p>
+</li>
 </ol>
 
       
@@ -379,7 +384,7 @@
       
         <div class="post-tags">
           
-            <a href="/cocosgirl.github.io/tags/编程/" rel="tag"># 编程</a>
+            <a href="/cocosgirl.github.io/tags/命令行/" rel="tag"># 命令行</a>
           
         </div>
       
@@ -392,8 +397,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/cocosgirl.github.io/2017/07/25/肚皮舞/" rel="next" title="肚皮舞">
-                <i class="fa fa-chevron-left"></i> 肚皮舞
+              <a href="/cocosgirl.github.io/2017/08/29/Cocos2d-JS开发/" rel="next" title="Cocos2d-JS开发">
+                <i class="fa fa-chevron-left"></i> Cocos2d-JS开发
               </a>
             
           </div>
@@ -401,10 +406,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/cocosgirl.github.io/2017/07/29/提升个人卓越领导力/" rel="prev" title="提升个人卓越领导力">
-                提升个人卓越领导力 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
