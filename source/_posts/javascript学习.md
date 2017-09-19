@@ -1,7 +1,7 @@
 ---
-title: javascript学习
+title: javascript基础知识
 date: 2017-07-27 20:58:03
-tags: 编程
+tags: javascript
 ---
 
 1. 变量命名： 
@@ -16,4 +16,3 @@ tags: 编程
 	var studentList = new Array();    
 	studentList[0] = "张三";
 	
-4.  
