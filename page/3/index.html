@@ -277,6 +277,143 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/06/07/5-盒子模型/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zyy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/cocosgirl.github.io/images/myhead.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cocosgirl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/cocosgirl.github.io/2017/06/07/5-盒子模型/" itemprop="url">5-盒子模型</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-07T19:52:17+08:00">
+                2017-06-07
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <p>5.1 CSS盒子模型<br><strong>每个元素都可以看成一个盒子</strong><br>盒子模型由content、padding、margin、border四个属性组成<br>content：内容，可以是文字或图片<br>margin：外边距，用于定义页面中元素与元素之间的距离<br>padding: 内边距（也称“补白”），用于定义内容与边框之间的距离<br>border: 边框 </p>
+<blockquote>
+<p>内容区：<br>内容区是CSS盒子模型的中心，有三个属性：width、height、overflow<br>width和height是针对内容区而言，不包括padding部分<br>overflow溢出属性，用来处理内容信息过多而超出内容区所占范围。  </p>
+</blockquote>
+<p>5.2 深入border<br><strong>“border:0”和“border:none”的区别主要体现在两点：性能差异和兼容差异</strong></p>
+<p>5.2.1 性能差异 </p>
+<ul>
+<li>“border:0“ 表示把border定义为0px，浏览器会对border进行渲染，需要占用内存</li>
+<li>“border:none” 表示把border定义为”none(无)“，浏览器对改属性不会作出渲染，不需要占用内存  </li>
+</ul>
+<p>5.2.2 兼容差异<br>兼容差异只存在于IE6和IE7的&lt; input type=”button” / &gt;标签以及&lt; button &gt;标签中，其他浏览器不存在兼容问题<br>“border:0“ 在所有浏览器中的效果都一样，都是把边框隐藏掉（不是去掉）<br>“border:none”  对IE6和IE7按钮的边框无效，在其他浏览器中会去掉按钮的边框</p>
+<p>5.3 负margin使用技巧  </p>
+<ul>
+<li>图片与文字对齐</li>
+<li>自适应两列布局</li>
+<li>元素垂直居中</li>
+<li>tab选项卡</li>
+</ul>
+<p>5.4 overflow使用  </p>
+<ul>
+<li>“overflow:scroll” 显示滚动条  </li>
+<li>“overflow:hidden” 清除浮动，隐藏溢出内容，以免影响布局，不好的一点是这部分的内容完全不显示，比如图片只显示了一部分  </li>
+</ul>
+<blockquote>
+<p>使用clear属性清除浮动的缺点是增加了一个多余标签<br>“overflow:hidden” 是一个小炸弹，它会将超出父元素部分的内容隐藏</p>
+</blockquote>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/06/07/Django学习/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1482,156 +1619,11 @@
 
 
     
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/06/02/git命令行/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zyy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/cocosgirl.github.io/images/myhead.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="cocosgirl">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/cocosgirl.github.io/2017/06/02/git命令行/" itemprop="url">git命令行</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-06-02T17:25:55+08:00">
-                2017-06-02
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <ol>
-<li><p>git clone<br>拉一个分支到当前目录<br>git clone <a href="https://github.com/cocosgirl/diana.git">https://github.com/cocosgirl/diana.git</a></p>
-</li>
-<li><p>git add .<br>把我们要提交的文件的信息添加到索引库中<br>例如：git add html_1_chapter.md</p>
-</li>
-<li><p>git commit<br>git将依据索引库中的内容来进行文件的提交<br>例如：git commit html_1_chapter.md -m “测试本地提交”<br>本地删除文件提交：<br>git commit -a -m “删除不要的文件”</p>
-</li>
-<li><p>git push<br>提交完以后发布<br>发布到分支：<br>例如：git push -u <a href="https://github.com/cocosgirl/cocosgirl.github.io">https://github.com/cocosgirl/cocosgirl.github.io</a> master  </p>
-</li>
-<li><p>合并分支<br>git pull origin hexo MERGE_HEAD origin/master  </p>
-</li>
-<li><p>设置当前分支<br>首先git checkout -b origin/master<br>其次git checkout master<br>即可恢复到master repository的状态，然后就可以pull了  </p>
-</li>
-<li><p>git help &lt;命令&gt;<br>查找命令的帮助信息  </p>
-</li>
-<li><p>git log<br>查看git的日志信息</p>
-</li>
-<li><p>git init<br>创建一个新的代码库或者初始化一个已存在的代码库</p>
-</li>
-<li><p>git rm<br>删除索引或代码库中的文件  </p>
-</li>
-<li><p>git status<br>显示当前git的状态，包括增删改，但是没有提交的信息</p>
-</li>
-<li><p>初始化**目录为本地代码库<br>cd **<br>git init   </p>
-</li>
-<li><p>git fetch<br>从服务器代码库获取数据<br>eg. git fetch origin  </p>
-</li>
-<li><p>git merge origin/master<br>合并origin/master到本地master分支</p>
-</li>
-<li><p>git pull 命令是git fetch和git merge命令的组合<br>eg. git pull origin master 其中origin是远程代码库名，master是要合并的本地分支</p>
-</li>
-<li><p>git其他常用命令参考<br><a href="http://www.cnblogs.com/cspku/articles/Git_cmds.html" target="_blank" rel="external">http://www.cnblogs.com/cspku/articles/Git_cmds.html</a></p>
-</li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
   </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/cocosgirl.github.io/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/cocosgirl.github.io/">1</a><a class="page-number" href="/cocosgirl.github.io/page/2/">2</a><span class="page-number current">3</span>
+    <a class="extend prev" rel="prev" href="/cocosgirl.github.io/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/cocosgirl.github.io/">1</a><a class="page-number" href="/cocosgirl.github.io/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/cocosgirl.github.io/page/4/">4</a><a class="extend next" rel="next" href="/cocosgirl.github.io/page/4/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 
@@ -1676,7 +1668,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/cocosgirl.github.io/archives">
-                <span class="site-state-item-count">30</span>
+                <span class="site-state-item-count">31</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
