@@ -8,3 +8,17 @@ tags: 命令行
 sudo su -  
 service mysqld restart
 
+2. 在当前服务器下连接数据库  
+mysql -uUser -pPassword  
+
+3. 查看当前服务器下的数据库  
+show databases;  
+
+4. 进入数据库  
+use database1;  
+
+5. 查看当前数据库的表  
+show tables;  
+
+6. 如果存在某表，删除  
+DROP TABLE IF EXISTS table1;  

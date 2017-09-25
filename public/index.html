@@ -277,6 +277,131 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/09/21/javascript数组用法/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="zyy">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/cocosgirl.github.io/images/myhead.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cocosgirl">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/cocosgirl.github.io/2017/09/21/javascript数组用法/" itemprop="url">javascript数组用法</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-09-21T20:13:00+08:00">
+                2017-09-21
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <ol>
+<li><p>数组声明与初始化方式：<br> var studentList = [“张三”,”李四”,”王五”];<br> var studentList = new Array(“张三”,”李四”,”王五”);<br> var studentList = new Array();<br> studentList[0] = “张三”;</p>
+</li>
+<li><p><font color="red">splice的使用</font><br> splice方法接收的第一个参数，表示想要删除或插入的元素的索引值，第二个参数是删除元素的个数。第三个往后就是要添加到数组里的值。</p>
+</li>
+<li><p>数组添加元素操作<br> push把元素添加到数组的末尾（可以一次加多个）：<br> studentList.push(“小赵”,”燕子”);  </p>
+<p> unshift把元素添加到数组的首位（可以一次加多个）：<br> studentList.unshift(“第一”,”第二”);</p>
+<p> 从索引5开始删除0个元素，添加张1、张2、张3三个元素：<br> studentList.splice(5, 0, “张1”, “张2”, “张3”);</p>
+</li>
+<li><p>数组删除元素操作<br>pop删除数组最后一个元素<br>shift删除数组第一个元素<br>splice(index, num)删除相应位置和数量的元素<br>studentList.splice(5,3); //删除从数组索引5开始的3个元素</p>
+</li>
+<li><p>数组合并concat<br> array1.concat(array2);  </p>
+</li>
+</ol>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/09/20/使用原型方法的好处/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -705,7 +830,18 @@
         
           
             <ol>
-<li>重启服务器上的mysql<br>sudo su -<br>service mysqld restart</li>
+<li><p>重启服务器上的mysql<br>sudo su -<br>service mysqld restart</p>
+</li>
+<li><p>在当前服务器下连接数据库<br>mysql -uUser -pPassword  </p>
+</li>
+<li><p>查看当前服务器下的数据库<br>show databases;  </p>
+</li>
+<li><p>进入数据库<br>use database1;  </p>
+</li>
+<li><p>查看当前数据库的表<br>show tables;  </p>
+</li>
+<li><p>如果存在某表，删除<br>DROP TABLE IF EXISTS table1;  </p>
+</li>
 </ol>
 
           
@@ -1328,135 +1464,7 @@
 </li>
 <li><p>数据类型：<br> javascript数据类型：数值、布尔、字符串、对象、数组类型。</p>
 </li>
-<li><p>数组声明与初始化方式：<br> var studentList = [“张三”,”李四”,”王五”];<br> var studentList = new Array(“张三”,”李四”,”王五”);<br> var studentList = new Array();<br> studentList[0] = “张三”;</p>
-</li>
-<li><p><font color="red">splice的使用</font><br> splice方法接收的第一个参数，表示想要删除或插入的元素的索引值，第二个参数是删除元素的个数。第三个往后就是要添加到数组里的值。</p>
-</li>
-<li><p>数组添加元素操作<br> push把元素添加到数组的末尾（可以一次加多个）：<br> studentList.push(“小赵”,”燕子”);  </p>
-<p> unshift把元素添加到数组的首位（可以一次加多个）：<br> studentList.unshift(“第一”,”第二”);</p>
-<p> 从索引5开始删除0个元素，添加张1、张2、张3三个元素：<br> studentList.splice(5, 0, “张1”, “张2”, “张3”);</p>
-</li>
-<li><p>数组删除元素操作<br>pop删除数组最后一个元素<br>shift删除数组第一个元素<br>splice(index, num)删除相应位置和数量的元素<br>studentList.splice(5,3); //删除从数组索引5开始的3个元素</p>
-</li>
 </ol>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://github.com/cocosgirl/cocosgirl.github.io/cocosgirl.github.io/2017/07/25/肚皮舞/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="zyy">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/cocosgirl.github.io/images/myhead.png">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="cocosgirl">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/cocosgirl.github.io/2017/07/25/肚皮舞/" itemprop="url">肚皮舞</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-07-25T14:26:47+08:00">
-                2017-07-25
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <p>肚皮舞：  </p>
-<p>对肚皮舞还是挺感兴趣的。</p>
-<p>心目中的肚皮舞就是抖肚子，想着肚子最近长得肉肉挺多的，开心的时候抖抖，不开心的时候也可以抖抖，既减肥又性感，最主要是想着年会的时候去表演一个节目~   </p>
-<p>兴冲冲的去上第一节课，教练胸大肚子上略微有肉，跳起来感觉全身骨头都在抖。  </p>
-<p>第一次上课前半节课练习抖胸，右上左下抖法，可是胸不听话啊，再加上我穿的保守的运动衣，就更加看不出来了，越抖越想笑，还有点不好意思。  </p>
-<p>下半节课练习抖腿抖肚子，8字形方向抖，就觉得更加想笑了，腿抖了就划不了8字，划了8字就抖不了腿，严重感觉自己肢体不协调。  </p>
-<p>一节课就这样笑过去了。</p>
 
           
         
@@ -1540,7 +1548,7 @@
           
             <div class="site-state-item site-state-posts">
               <a href="/cocosgirl.github.io/archives">
-                <span class="site-state-item-count">31</span>
+                <span class="site-state-item-count">32</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
