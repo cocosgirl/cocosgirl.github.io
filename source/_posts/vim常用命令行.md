@@ -21,6 +21,8 @@ tags: 命令行
 
  ssh -Ai /Users/tuyoo/.ssh/id_rsa.zyy zyy#UTF-8@10.3.13.8 -p 222 -oForwardAgent=yes
  
+* 用指定的app打开文件  
+  open -a /Applications/MacDown.app vim常用命令行.md  
 * 
 
 
