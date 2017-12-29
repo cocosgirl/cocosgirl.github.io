@@ -23,7 +23,9 @@ tags: 命令行
  
 * 用指定的app打开文件  
   open -a /Applications/MacDown.app vim常用命令行.md  
-* 
+  
+* 修改文件操作权限  
+  sudo chown tyhall:tyhall 0.json （若修改文件夹下的所有文件操作权限，需要在chown后面加上-R）
 
 
 
