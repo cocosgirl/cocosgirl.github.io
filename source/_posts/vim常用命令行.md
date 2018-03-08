@@ -27,8 +27,11 @@ tags: 命令行
 * 修改文件操作权限  
   sudo chown tyhall:tyhall 0.json （若修改文件夹下的所有文件操作权限，需要在chown后面加上-R）
 
+* 查看磁盘使用情况  df  
 
+* 查看当前java进程 ps -ef|grep java
 
+* 查看当前python进程 ps aux|grep python
   
 
 
