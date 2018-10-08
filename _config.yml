@@ -70,4 +70,4 @@ theme: next
 deploy:
   type: git
   repo: git@github.com:cocosgirl/cocosgirl.github.io.git
-  branch: master 
+  branch: hexo 
