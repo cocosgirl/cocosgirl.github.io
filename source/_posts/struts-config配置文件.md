@@ -4,7 +4,7 @@ date: 2018-03-02 10:01:54
 tags: [框架]
 ---
 
-< struts-config >是struts的根元素，它主要有8个子元素，DTD定义如下：
+< struts-config >是struts的根元素，它主要有8个子元素，DTD定义如下17：
 
 < !ELEMENT struts-config  
 (data-sources?,form-beans?,global-exceptions?,global-forwards?,action-mappings?,controller?,message-resources\*,plug-in\*)  
