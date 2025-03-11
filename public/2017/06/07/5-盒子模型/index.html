@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  
+  <title>5-盒子模型 | cocosgirl</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="5.1 CSS盒子模型每个元素都可以看成一个盒子盒子模型由content、padding、margin、border四个属性组成content：内容，可以是文字或图片margin：外边距，用于定义页面中元素与元素之间的距离padding: 内边距（也称“补白”），用于定义内容与边框之间的距离border: 边框   内容区：内容区是CSS盒子模型的中心，有三个属性：width、height、ove">
+<meta property="og:type" content="article">
+<meta property="og:title" content="5-盒子模型">
+<meta property="og:url" content="https://cocosgirl.github.io/2017/06/07/5-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/index.html">
+<meta property="og:site_name" content="cocosgirl">
+<meta property="og:description" content="5.1 CSS盒子模型每个元素都可以看成一个盒子盒子模型由content、padding、margin、border四个属性组成content：内容，可以是文字或图片margin：外边距，用于定义页面中元素与元素之间的距离padding: 内边距（也称“补白”），用于定义内容与边框之间的距离border: 边框   内容区：内容区是CSS盒子模型的中心，有三个属性：width、height、ove">
+<meta property="og:locale">
+<meta property="article:published_time" content="2017-06-07T11:52:17.000Z">
+<meta property="article:modified_time" content="2025-03-10T10:51:32.319Z">
+<meta property="article:author" content="zyy">
+<meta property="article:tag" content="html">
+<meta name="twitter:card" content="summary">
+  
+    <link rel="alternate" href="/atom.xml" title="cocosgirl" type="application/atom+xml">
+  
+  
+    <link rel="shortcut icon" href="/favicon.png">
+  
+  
+    
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
+
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+  
+    
+<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
+
+  
+  
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
+
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">cocosgirl</a>
+      </h1>
+      
+        <h2 id="subtitle-wrap">
+          <a href="/" id="subtitle">IT girl</a>
+        </h2>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+        
+          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
+        
+        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://cocosgirl.github.io"></form>
+      </div>
+    </div>
+  </div>
+</header>
+
+      <div class="outer">
+        <section id="main"><article id="post-5-盒子模型" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  <div class="article-meta">
+    <a href="/2017/06/07/5-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/" class="article-date">
+  <time class="dt-published" datetime="2017-06-07T11:52:17.000Z" itemprop="datePublished">2017-06-07</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="p-name article-title" itemprop="headline name">
+      5-盒子模型
+    </h1>
+  
+
+      </header>
+    
+    <div class="e-content article-entry" itemprop="articleBody">
+      
+        <p>5.1 CSS盒子模型<br><strong>每个元素都可以看成一个盒子</strong><br>盒子模型由content、padding、margin、border四个属性组成<br>content：内容，可以是文字或图片<br>margin：外边距，用于定义页面中元素与元素之间的距离<br>padding: 内边距（也称“补白”），用于定义内容与边框之间的距离<br>border: 边框 </p>
+<blockquote>
+<p>内容区：<br>内容区是CSS盒子模型的中心，有三个属性：width、height、overflow<br>width和height是针对内容区而言，不包括padding部分<br>overflow溢出属性，用来处理内容信息过多而超出内容区所占范围。  </p>
+</blockquote>
+<p>5.2 深入border<br><strong>“border:0”和“border:none”的区别主要体现在两点：性能差异和兼容差异</strong></p>
+<p>5.2.1 性能差异 </p>
+<ul>
+<li>“border:0“ 表示把border定义为0px，浏览器会对border进行渲染，需要占用内存</li>
+<li>“border:none” 表示把border定义为”none(无)“，浏览器对改属性不会作出渲染，不需要占用内存  </li>
+</ul>
+<p>5.2.2 兼容差异<br>兼容差异只存在于IE6和IE7的&lt; input type=”button” / &gt;标签以及&lt; button &gt;标签中，其他浏览器不存在兼容问题<br>“border:0“ 在所有浏览器中的效果都一样，都是把边框隐藏掉（不是去掉）<br>“border:none”  对IE6和IE7按钮的边框无效，在其他浏览器中会去掉按钮的边框</p>
+<p>5.3 负margin使用技巧  </p>
+<ul>
+<li>图片与文字对齐</li>
+<li>自适应两列布局</li>
+<li>元素垂直居中</li>
+<li>tab选项卡</li>
+</ul>
+<p>5.4 overflow使用  </p>
+<ul>
+<li>“overflow:scroll” 显示滚动条  </li>
+<li>“overflow:hidden” 清除浮动，隐藏溢出内容，以免影响布局，不好的一点是这部分的内容完全不显示，比如图片只显示了一部分  </li>
+</ul>
+<blockquote>
+<p>使用clear属性清除浮动的缺点是增加了一个多余标签<br>“overflow:hidden” 是一个小炸弹，它会将超出父元素部分的内容隐藏</p>
+</blockquote>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="https://cocosgirl.github.io/2017/06/07/5-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/" data-id="cm848icdf000dim1t8nrddo2r" data-title="5-盒子模型" class="article-share-link"><span class="fa fa-share">Share</span></a>
+      
+      
+      
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/html/" rel="tag">html</a></li></ul>
+
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+    <a href="/2017/06/07/6-%E5%B8%B8%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E5%92%8C%E5%B1%9E%E6%80%A7/" id="article-nav-newer" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Newer</strong>
+      <div class="article-nav-title">
+        
+          6-常用的标签和属性
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2017/06/07/Django%E5%AD%A6%E4%B9%A0/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Django学习</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tags</h3>
+    <div class="widget">
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" rel="tag">命令行</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%B9%E8%AE%AD/" rel="tag">培训</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%BB%E7%BB%93/" rel="tag">总结</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A1%86%E6%9E%B6/" rel="tag">框架</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B5%8B%E8%AF%95/" rel="tag">测试</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B8%B8%E6%88%8F/" rel="tag">游戏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BF%90%E5%8A%A8/" rel="tag">运动</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Tag Cloud</h3>
+    <div class="widget tagcloud">
+      <a href="/tags/html/" style="font-size: 20px;">html</a> <a href="/tags/javascript/" style="font-size: 15px;">javascript</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" style="font-size: 18.33px;">命令行</a> <a href="/tags/%E5%9F%B9%E8%AE%AD/" style="font-size: 11.67px;">培训</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">工具</a> <a href="/tags/%E6%80%BB%E7%BB%93/" style="font-size: 11.67px;">总结</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 13.33px;">框架</a> <a href="/tags/%E6%B5%8B%E8%AF%95/" style="font-size: 10px;">测试</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 16.67px;">游戏</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 13.33px;">编程</a> <a href="/tags/%E8%BF%90%E5%8A%A8/" style="font-size: 15px;">运动</a>
+    </div>
+  </div>
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Archives</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/10/">October 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">Recent Posts</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2018/10/08/test/">test</a>
+          </li>
+        
+          <li>
+            <a href="/2018/05/18/tornado%E5%AD%A6%E4%B9%A0/">tornado学习</a>
+          </li>
+        
+          <li>
+            <a href="/2018/03/02/struts-config%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/">struts-config.xml配置文件</a>
+          </li>
+        
+          <li>
+            <a href="/2018/01/11/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8Bmd/">面向对象编程</a>
+          </li>
+        
+          <li>
+            <a href="/2017/12/11/mysql%E5%AF%86%E7%A0%81%E8%BF%87%E6%9C%9F/">mysql密码过期</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      
+      &copy; 2025 zyy<br>
+      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+
+
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+
+<script src="/js/jquery-3.6.4.min.js"></script>
+
+
+
+  
+<script src="/fancybox/jquery.fancybox.min.js"></script>
+
+
+
+
+<script src="/js/script.js"></script>
+
+
+
+
+
+  </div>
+</body>
+</html>
