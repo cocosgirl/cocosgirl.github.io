@@ -1,266 +1,38 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-  
-  <title>javascript数组用法 | cocosgirl</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="description" content="数组声明与初始化方式： var studentList &#x3D; [“张三”,”李四”,”王五”]; var studentList &#x3D; new Array(“张三”,”李四”,”王五”); var studentList &#x3D; new Array(); studentList[0] &#x3D; “张三”;  splice的使用 splice方法接收的第一个参数，表示想要删除或插入的元素的索引值，第二个参数是删">
-<meta property="og:type" content="article">
-<meta property="og:title" content="javascript数组用法">
-<meta property="og:url" content="http://example.com/2017/09/21/javascript%E6%95%B0%E7%BB%84%E7%94%A8%E6%B3%95/index.html">
-<meta property="og:site_name" content="cocosgirl">
-<meta property="og:description" content="数组声明与初始化方式： var studentList &#x3D; [“张三”,”李四”,”王五”]; var studentList &#x3D; new Array(“张三”,”李四”,”王五”); var studentList &#x3D; new Array(); studentList[0] &#x3D; “张三”;  splice的使用 splice方法接收的第一个参数，表示想要删除或插入的元素的索引值，第二个参数是删">
-<meta property="og:locale">
-<meta property="article:published_time" content="2017-09-21T12:13:00.000Z">
-<meta property="article:modified_time" content="2025-03-10T10:51:32.320Z">
-<meta property="article:author" content="zyy">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="cocosgirl" type="application/atom+xml">
-  
-  
-    <link rel="shortcut icon" href="/favicon.png">
-  
-  
-    
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/typeface-source-code-pro@0.0.71/index.min.css">
-
-  
-  
-<link rel="stylesheet" href="/css/style.css">
-
-  
-    
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.min.css">
-
-  
-  
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fork-awesome@1.2.0/css/fork-awesome.min.css">
-
-<meta name="generator" content="Hexo 7.3.0"></head>
-
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">cocosgirl</a>
-      </h1>
-      
-        <h2 id="subtitle-wrap">
-          <a href="/" id="subtitle">IT girl</a>
-        </h2>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"><span class="fa fa-bars"></span></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-        
-          <a class="nav-icon" href="/atom.xml" title="RSS Feed"><span class="fa fa-rss"></span></a>
-        
-        <a class="nav-icon nav-search-btn" title="Search"><span class="fa fa-search"></span></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://example.com"></form>
-      </div>
-    </div>
-  </div>
-</header>
-
-      <div class="outer">
-        <section id="main"><article id="post-javascript数组用法" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
-  <div class="article-meta">
-    <a href="/2017/09/21/javascript%E6%95%B0%E7%BB%84%E7%94%A8%E6%B3%95/" class="article-date">
-  <time class="dt-published" datetime="2017-09-21T12:13:00.000Z" itemprop="datePublished">2017-09-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="p-name article-title" itemprop="headline name">
-      javascript数组用法
-    </h1>
-  
-
-      </header>
-    
-    <div class="e-content article-entry" itemprop="articleBody">
-      
-        <ol>
-<li><p>数组声明与初始化方式：<br> var studentList = [“张三”,”李四”,”王五”];<br> var studentList = new Array(“张三”,”李四”,”王五”);<br> var studentList = new Array();<br> studentList[0] = “张三”;</p>
-</li>
-<li><p><font color="red">splice的使用</font><br> splice方法接收的第一个参数，表示想要删除或插入的元素的索引值，第二个参数是删除元素的个数。第三个往后就是要添加到数组里的值。</p>
-</li>
-<li><p>数组添加元素操作<br> push把元素添加到数组的末尾（可以一次加多个）：<br> studentList.push(“小赵”,”燕子”);  </p>
-<p> unshift把元素添加到数组的首位（可以一次加多个）：<br> studentList.unshift(“第一”,”第二”);</p>
-<p> 从索引5开始删除0个元素，添加张1、张2、张3三个元素：<br> studentList.splice(5, 0, “张1”, “张2”, “张3”);</p>
-</li>
-<li><p>数组删除元素操作<br>pop删除数组最后一个元素<br>shift删除数组第一个元素<br>splice(index, num)删除相应位置和数量的元素<br>studentList.splice(5,3); //删除从数组索引5开始的3个元素</p>
-</li>
-<li><p>数组合并concat<br> array1.concat(array2);  </p>
-</li>
-</ol>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="http://example.com/2017/09/21/javascript%E6%95%B0%E7%BB%84%E7%94%A8%E6%B3%95/" data-id="cm84atnrj0016yb1the1wg1gx" data-title="javascript数组用法" class="article-share-link"><span class="fa fa-share">Share</span></a>
-      
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2017/10/09/webstorm%E5%BF%AB%E6%8D%B7%E9%94%AE/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          webstorm快捷键
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2017/09/20/%E4%BD%BF%E7%94%A8%E5%8E%9F%E5%9E%8B%E6%96%B9%E6%B3%95%E7%9A%84%E5%A5%BD%E5%A4%84/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">js使用原型方法的好处</div>
-    </a>
-  
-</nav>
-
-  
-</article>
+{% extends '_layout.swig' %}
+{% import '_macro/post.swig' as post_template %}
+{% import '_macro/sidebar.swig' as sidebar_template %}
 
 
-</section>
-        
-          <aside id="sidebar">
-  
-    
+{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tags</h3>
-    <div class="widget">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/html/" rel="tag">html</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/javascript/" rel="tag">javascript</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/python/" rel="tag">python</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" rel="tag">命令行</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%B9%E8%AE%AD/" rel="tag">培训</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%80%BB%E7%BB%93/" rel="tag">总结</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%A1%86%E6%9E%B6/" rel="tag">框架</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%B8%B8%E6%88%8F/" rel="tag">游戏</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E7%BC%96%E7%A8%8B/" rel="tag">编程</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E8%BF%90%E5%8A%A8/" rel="tag">运动</a></li></ul>
+{% block page_class %}page-post-detail{% endblock %}
+
+
+{% block content %}
+
+  <div id="posts" class="posts-expand">
+    {{ post_template.render(page) }}
+
+    <div class="post-spread">
+      {% if theme.jiathis %}
+        {% include '_partials/share/jiathis.swig' %}
+      {% elseif theme.baidushare %}
+        {% include '_partials/share/baidushare.swig' %}
+      {% elseif theme.add_this_id %}
+        {% include '_partials/share/add-this.swig' %}
+      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
+        {% include '_partials/share/duoshuo_share.swig' %}
+      {% endif %}
     </div>
   </div>
 
+{% endblock %}
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Tag Cloud</h3>
-    <div class="widget tagcloud">
-      <a href="/tags/html/" style="font-size: 20px;">html</a> <a href="/tags/javascript/" style="font-size: 15px;">javascript</a> <a href="/tags/python/" style="font-size: 10px;">python</a> <a href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" style="font-size: 18.33px;">命令行</a> <a href="/tags/%E5%9F%B9%E8%AE%AD/" style="font-size: 11.67px;">培训</a> <a href="/tags/%E5%B7%A5%E5%85%B7/" style="font-size: 15px;">工具</a> <a href="/tags/%E6%80%BB%E7%BB%93/" style="font-size: 11.67px;">总结</a> <a href="/tags/%E6%A1%86%E6%9E%B6/" style="font-size: 13.33px;">框架</a> <a href="/tags/%E6%B8%B8%E6%88%8F/" style="font-size: 16.67px;">游戏</a> <a href="/tags/%E7%BC%96%E7%A8%8B/" style="font-size: 13.33px;">编程</a> <a href="/tags/%E8%BF%90%E5%8A%A8/" style="font-size: 15px;">运动</a>
-    </div>
-  </div>
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Archives</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/05/">May 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/03/">March 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/01/">January 2018</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/12/">December 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/10/">October 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/09/">September 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/08/">August 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/07/">July 2017</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2017/06/">June 2017</a></li></ul>
-    </div>
-  </div>
+{% block sidebar %}
+  {{ sidebar_template.render(true) }}
+{% endblock %}
 
 
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">Recent Posts</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2018/05/18/tornado%E5%AD%A6%E4%B9%A0/">tornado学习</a>
-          </li>
-        
-          <li>
-            <a href="/2018/03/02/struts-config%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6/">struts-config.xml配置文件</a>
-          </li>
-        
-          <li>
-            <a href="/2018/01/11/%E9%9D%A2%E5%90%91%E5%AF%B9%E8%B1%A1%E7%BC%96%E7%A8%8Bmd/">面向对象编程</a>
-          </li>
-        
-          <li>
-            <a href="/2017/12/11/mysql%E5%AF%86%E7%A0%81%E8%BF%87%E6%9C%9F/">mysql密码过期</a>
-          </li>
-        
-          <li>
-            <a href="/2017/12/07/python%E4%B9%8Bos%E6%A8%A1%E5%9D%97/">python之os模块</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      
-      &copy; 2025 zyy<br>
-      Powered by <a href="https://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-
-
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-
-<script src="/js/jquery-3.6.4.min.js"></script>
-
-
-
-  
-<script src="/fancybox/jquery.fancybox.min.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-
-  </div>
-</body>
-</html>
+{% block script_extra %}
+  {% include '_scripts/pages/post-details.swig' %}
+{% endblock %}
