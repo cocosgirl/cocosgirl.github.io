@@ -1,38 +1,329 @@
-{% extends '_layout.swig' %}
-{% import '_macro/post.swig' as post_template %}
-{% import '_macro/sidebar.swig' as sidebar_template %}
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#222"><meta name="generator" content="Hexo 7.3.0">
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.jpg">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/logo.jpg">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/logo.jpg">
+  <link rel="mask-icon" href="/images/logo.jpg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap&subset=latin,latin-ext">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha256-dABdfBfUoC8vJUBOwGVdm8L9qlMWaHTIfXt+7GnZCIo=" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.1.1/animate.min.css" integrity="sha256-PR7ttpcvz8qrF57fur/yAx1qXMFJeJFiA6pSzWi0OIE=" crossorigin="anonymous">
+
+<script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":false,"version":"8.22.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},"hljswrap":true,"copycode":{"enable":false,"style":null},"fold":{"enable":false,"height":500},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}}</script><script src="/js/config.js"></script>
+
+    <meta name="description" content="常见块元素与行内元素块级元素：div , p , form, ul, li , ol, dl, form, address, fieldset, hr, menu, table行内元素：span, strong, em, br, img , input, label…    display常见属性“display:none”：元素被隐藏之后，不占据原来的位置“visibility:hidden”">
+<meta property="og:type" content="article">
+<meta property="og:title" content="6-常用的标签和属性">
+<meta property="og:url" content="http://example.com/2017/06/07/6-%E5%B8%B8%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E5%92%8C%E5%B1%9E%E6%80%A7/index.html">
+<meta property="og:site_name" content="cocosgirl">
+<meta property="og:description" content="常见块元素与行内元素块级元素：div , p , form, ul, li , ol, dl, form, address, fieldset, hr, menu, table行内元素：span, strong, em, br, img , input, label…    display常见属性“display:none”：元素被隐藏之后，不占据原来的位置“visibility:hidden”">
+<meta property="og:locale">
+<meta property="article:published_time" content="2017-06-07T12:58:20.000Z">
+<meta property="article:modified_time" content="2025-03-10T10:51:32.319Z">
+<meta property="article:author" content="zyy">
+<meta property="article:tag" content="html">
+<meta name="twitter:card" content="summary">
 
 
-{% block title %}{{ page.title }} | {{ config.title }}{% endblock %}
-
-{% block page_class %}page-post-detail{% endblock %}
+<link rel="canonical" href="http://example.com/2017/06/07/6-%E5%B8%B8%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E5%92%8C%E5%B1%9E%E6%80%A7/">
 
 
-{% block content %}
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"zh-Hans","comments":true,"permalink":"http://example.com/2017/06/07/6-%E5%B8%B8%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E5%92%8C%E5%B1%9E%E6%80%A7/","path":"2017/06/07/6-常用的标签和属性/","title":"6-常用的标签和属性"}</script>
 
-  <div id="posts" class="posts-expand">
-    {{ post_template.render(page) }}
+<script class="next-config" data-name="calendar" type="application/json">""</script>
+<title>6-常用的标签和属性 | cocosgirl</title>
+  
 
-    <div class="post-spread">
-      {% if theme.jiathis %}
-        {% include '_partials/share/jiathis.swig' %}
-      {% elseif theme.baidushare %}
-        {% include '_partials/share/baidushare.swig' %}
-      {% elseif theme.add_this_id %}
-        {% include '_partials/share/add-this.swig' %}
-      {% elseif theme.duoshuo_shortname and theme.duoshuo_share %}
-        {% include '_partials/share/duoshuo_share.swig' %}
-      {% endif %}
+
+
+
+
+
+
+
+  <noscript>
+    <link rel="stylesheet" href="/css/noscript.css">
+  </noscript>
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" class="use-motion">
+  <div class="headband"></div>
+
+  <main class="main">
+    <div class="column">
+      <header class="header" itemscope itemtype="http://schema.org/WPHeader"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏" role="button">
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
+        <span class="toggle-line"></span>
     </div>
   </div>
 
-{% endblock %}
+  <div class="site-meta">
 
-{% block sidebar %}
-  {{ sidebar_template.render(true) }}
-{% endblock %}
+    <a href="/" class="brand" rel="start">
+      <i class="logo-line"></i>
+      <p class="site-title">cocosgirl</p>
+      <i class="logo-line"></i>
+    </a>
+      <p class="site-subtitle" itemprop="description">不积跬步，无以至千里</p>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger" aria-label="搜索" role="button">
+    </div>
+  </div>
+</div>
 
 
-{% block script_extra %}
-  {% include '_scripts/pages/post-details.swig' %}
-{% endblock %}
+
+<nav class="site-nav">
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a></li>
+  </ul>
+</nav>
+
+
+
+
+</header>
+        
+  
+  <aside class="sidebar">
+
+    <div class="sidebar-inner sidebar-overview-active">
+      <ul class="sidebar-nav">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <div class="sidebar-panel-container">
+        <!--noindex-->
+        <div class="post-toc-wrap sidebar-panel">
+        </div>
+        <!--/noindex-->
+
+        <div class="site-overview-wrap sidebar-panel">
+          <div class="site-author animated" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="zyy"
+      src="/images/myhead.png">
+  <p class="site-author-name" itemprop="name">zyy</p>
+  <div class="site-description" itemprop="description">愿有岁月可回首</div>
+</div>
+<div class="site-state-wrap animated">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+        <a href="/archives/">
+          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-tags">
+          <a href="/tags/">
+        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+
+        </div>
+      </div>
+    </div>
+
+    
+  </aside>
+
+
+    </div>
+
+    <div class="main-inner post posts-expand">
+
+
+  
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-Hans">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2017/06/07/6-%E5%B8%B8%E7%94%A8%E7%9A%84%E6%A0%87%E7%AD%BE%E5%92%8C%E5%B1%9E%E6%80%A7/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/myhead.png">
+      <meta itemprop="name" content="zyy">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="cocosgirl">
+      <meta itemprop="description" content="愿有岁月可回首">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="6-常用的标签和属性 | cocosgirl">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          6-常用的标签和属性
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+
+      <time title="创建时间：2017-06-07 20:58:20" itemprop="dateCreated datePublished" datetime="2017-06-07T20:58:20+08:00">2017-06-07</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody"><ol>
+<li><p>常见块元素与行内元素<br>块级元素：div , p , form, ul, li , ol, dl, form, address, fieldset, hr, menu, table<br>行内元素：span, strong, em, br, img , input, label…  </p>
+</li>
+<li><p>display常见属性<br>“display:none”：元素被隐藏之后，不占据原来的位置<br>“visibility:hidden”：元素被隐藏之后，依然占据原来的位置<br>“display:table-cell”:<br>可以让元素以表格单元格的形式呈现，具备td元素的特点。<br>IE8+以及其他现代浏览器都支持此属性，不过IE6&#x2F;IE7中并不支持，考虑到IE6&#x2F;IE7使用率越来越低，我们还是果断使用这一布局神器，可以实现以下3种功能</p>
+</li>
+</ol>
+<ul>
+<li>图片垂直居中于元素</li>
+<li>等高布局</li>
+<li>自动平均划分元素，并且在同一行显示</li>
+</ul>
+<ol start="3">
+<li><p>图片常用的三种居中方式<br>水平居中 “text-align:center”<br>垂直居中 “display:table-cell”和”vertical-align:center”配合实现  </p>
+</li>
+<li><p>使用”font-size:0”来去除”display:inline-block”的元素间距  </p>
+</li>
+<li><p>常用标签：<br>dl定义列表，结合dt、dd使用。dt定义列表中的项目，dd描述列表中的项目。<br>b 加粗<br>u 下划线<br>i 斜体<br>s 中划线<br>strong  强调<br>hr 分割线<br>img标签下，alt属性是找不到图片的时候显示，title是鼠标放在图片上的时候显示<br>a标签下，设置target&#x3D;”_blank”属性，点击链接会打开新窗口，title属性设置内容，是鼠标放在链接上的时候显示  </p>
+</li>
+<li><p>搜索引擎优化<br>“text-indent:-9999px;”属性一般用于LOGO部分，在搜索引擎中h1是非常重要的标签，一般把网站的LOGO图片放到h1标签中，但是搜索引擎无法识别图片，只能识别文字，为了更好的优化SEO：<br>指定h1元素的长宽与LOGO图片的长宽一样，然后定义h1的背景图片（background-image）为LOGO图片<br>使用LOGO图片为h1的背景图片，然后使用”text-indent:-9999px;”属性来隐藏h1的文字内容。  </p>
+</li>
+<li><p>“text-align:center;”与”margin:0 auto;”的区别</p>
+</li>
+</ol>
+<ul>
+<li>“text-align:center;” 实现文字、inline元素以及inline-block元素的水平居中  </li>
+<li>“margin:0 auto;” 实现的是块元素的水平居中  </li>
+<li>“text-align:center;”在父元素中定义，”margin:0 auto;” 在当前元素中定义</li>
+</ul>
+<ol start="8">
+<li>清除浮动常见的三种方法</li>
+</ol>
+<ul>
+<li>clear:both（最常用）不应用于浮动元素本身，而是浮动元素后面的元素</li>
+<li>overflow:hidden 应用于浮动元素的父元素，而是不是当前的浮动元素</li>
+<li>::after伪元素 结合clear:both使用</li>
+</ul>
+
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/html/" rel="tag"># html</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2017/06/07/5-%E7%9B%92%E5%AD%90%E6%A8%A1%E5%9E%8B/" rel="prev" title="5-盒子模型">
+                  <i class="fa fa-angle-left"></i> 5-盒子模型
+                </a>
+            </div>
+            <div class="post-nav-item">
+                <a href="/2017/06/08/%E4%BA%A7%E5%93%81%E7%BB%8F%E7%90%86%E5%9F%B9%E8%AE%AD/" rel="next" title="产品经理培训">
+                  产品经理培训 <i class="fa fa-angle-right"></i>
+                </a>
+            </div>
+          </div>
+    </footer>
+  </article>
+</div>
+
+
+
+
+
+
+</div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+
+  <div class="copyright">
+    &copy; 
+    <span itemprop="copyrightYear">2025</span>
+    <span class="with-love">
+      <i class="fa fa-heart"></i>
+    </span>
+    <span class="author" itemprop="copyrightHolder">true</span>
+  </div>
+  <div class="powered-by">由 <a href="https://hexo.io/" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.js.org/pisces/" rel="noopener" target="_blank">NexT.Pisces</a> 强力驱动
+  </div>
+
+    </div>
+  </footer>
+
+  
+  <div class="toggle sidebar-toggle" role="button">
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+    <span class="toggle-line"></span>
+  </div>
+  <div class="sidebar-dimmer"></div>
+  <div class="back-to-top" role="button" aria-label="返回顶部">
+    <i class="fa fa-arrow-up fa-lg"></i>
+    <span>0%</span>
+  </div>
+
+<noscript>
+  <div class="noscript-warning">Theme NexT works best with JavaScript enabled</div>
+</noscript>
+
+
+  
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha256-XL2inqUJaslATFnHdJOi9GfQ60on8Wx1C2H8DYiN1xY=" crossorigin="anonymous"></script>
+<script src="/js/comments.js"></script><script src="/js/utils.js"></script><script src="/js/motion.js"></script><script src="/js/sidebar.js"></script><script src="/js/next-boot.js"></script>
+
+  
+
+
+
+
+
+
+  
+
+
+
+
+
+</body>
+</html>
