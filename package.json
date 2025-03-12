@@ -6,6 +6,7 @@
     "version": "7.3.0"
   },
   "dependencies": {
+    "cross-spawn": "^7.0.6",
     "hexo": "^7.3.0",
     "hexo-deployer-git": "^4.0.0",
     "hexo-generator-archive": "^0.1.4",
@@ -13,9 +14,13 @@
     "hexo-generator-index": "^0.2.0",
     "hexo-generator-tag": "^0.2.0",
     "hexo-renderer-ejs": "^2.0.0",
-    "hexo-renderer-marked": "^0.2.10",
+    "hexo-renderer-marked": "^7.0.1",
     "hexo-renderer-pug": "^3.0.0",
     "hexo-renderer-stylus": "^0.3.1",
-    "hexo-server": "^0.2.0"
+    "hexo-server": "^0.2.0",
+    "hexo-util": "^3.3.0",
+    "highlight.js": "^11.11.1",
+    "marked": "^15.0.7",
+    "striptags": "^3.2.0"
   }
 }
