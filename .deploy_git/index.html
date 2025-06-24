@@ -123,13 +123,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">40</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -155,7 +155,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2018/05/18/tornado%E5%AD%A6%E4%B9%A0/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2025/04/03/vue-js%E5%AD%A6%E4%B9%A0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/myhead.png">
@@ -173,7 +173,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2018/05/18/tornado%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">tornado学习</a>
+          <a href="/2025/04/03/vue-js%E5%AD%A6%E4%B9%A0/" class="post-title-link" itemprop="url">vue.js学习</a>
         </h2>
 
         <div class="post-meta-container">
@@ -184,7 +184,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2018-05-18 10:20:21" itemprop="dateCreated datePublished" datetime="2018-05-18T10:20:21+08:00">2018-05-18</time>
+      <time title="创建时间：2025-04-03 14:43:29" itemprop="dateCreated datePublished" datetime="2025-04-03T14:43:29+08:00">2025-04-03</time>
     </span>
 
   
@@ -197,7 +197,116 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p>学习参考链接：<br><a href="http://demo.pythoner.com/itt2zh/ch1.html">http://demo.pythoner.com/itt2zh/ch1.html</a></p>
+          <h4 id="官网链接：-vue官网"><a href="#官网链接：-vue官网" class="headerlink" title="官网链接： vue官网"></a>官网链接： <a href="https://cn.vuejs.org/guide/introduction.html">vue官网</a></h4><blockquote>
+<p>什么是 Vue？<br>Vue (发音为 &#x2F;vjuː&#x2F;，类似 view) 是一款用于构建用户界面的 JavaScript 框架。它基于标准 HTML、CSS 和 JavaScript 构建，并提供了一套声明式的、组件化的编程模型，帮助你高效地开发用户界面。无论是简单还是复杂的界面，Vue 都可以胜任。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th>涵义</th>
+<th>命令</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>创建Vue项目</td>
+<td>npm init vue@latest</td>
+<td>名字不能大写</td>
+</tr>
+<tr>
+<td>启动</td>
+<td>npm run dev</td>
+<td><a href="http://localhost:5173/">http://localhost:5173/</a></td>
+</tr>
+<tr>
+<td>安装</td>
+<td>npm&#x2F;cnpm install</td>
+<td>cnpm install安装速度更快</td>
+</tr>
+<tr>
+<td>创建vite项目</td>
+<td>npm create vite@latest temp-demo – –template vue</td>
+<td>基于template样式</td>
+</tr>
+<tr>
+<td>安装element-plus</td>
+<td>npm install element-plus @element-plus&#x2F;icons-vue</td>
+<td>基于vue3的element-plus</td>
+</tr>
+</tbody></table>
+<h3 id="生成的文件涵义"><a href="#生成的文件涵义" class="headerlink" title="生成的文件涵义"></a>生成的文件涵义</h3><img src="images/img.png" style="display: block; margin: 0;" />
+
+<blockquote>
+<p>创建完默认的项目，会自动生成很多代码，我们可以删除 src&#x2F;components下的所有文件，再从App.vue里删除引用，保留script和template，template可以放在script的上面，或者下面，这个顺序是随意的，谁在上谁在下都可以。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script &gt;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>模板语法：&#123;&#123; &#125;&#125;双大括号里引入变量，支持常用的js单行语法，不支持多行语法（例如：if else，var 等），建议不要在template里做逻辑运算。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;h3&gt;模板语法&lt;/h3&gt;</span><br><span class="line">  &lt;p&gt;&#123;&#123;msg&#125;&#125;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;&#123;&#123;ret ? 1 : 0&#125;&#125;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;&#123;&#123;number+1&#125;&#125;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;&#123;&#123;message.split(&quot;&quot;).reverse().join(&quot;&quot;)&#125;&#125;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;Using text interpolation: &#123;&#123; rawHtml &#125;&#125;&lt;/p&gt;</span><br><span class="line">  &lt;p&gt;Using v-html directive: &lt;span v-html=&quot;rawHtml&quot;&gt;&lt;/span&gt;&lt;/p&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script &gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      msg: &quot;hello world 2025&quot;,</span><br><span class="line">      ret: true,</span><br><span class="line">      number: 1,</span><br><span class="line">      message: &quot;大家好&quot;,</span><br><span class="line">      rawHtml: &quot;&lt;a href=&#x27;https://www.baidu.com/&#x27;&gt;百度首页&lt;/a&gt;&quot;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>原始 HTML：双大括号会将数据解释为纯文本，而不是 HTML。若想插入 HTML，你需要使用 v-html 指令：</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&lt;p&gt;Using text interpolation: &#123;&#123; rawHtml &#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;p&gt;Using v-html directive: &lt;span v-html=&quot;rawHtml&quot;&gt;&lt;/span&gt;&lt;/p&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>Attribute 绑定: 双大括号不能在 HTML attributes 中使用。想要响应式地绑定一个 attribute，应该使用 v-bind 指令, 或者简写,把冒号前的v-bind省略(例如: v-bind:id 可以简写成:id,v-bind:disabled 可以简写成:disabled)</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div v-bind:id=&quot;appid&quot; v-bind:class=&quot;msg&quot;&gt;测试class属性&lt;/div&gt;</span><br><span class="line">  &lt;button :disabled=&quot;btn_status&quot;&gt;按钮&lt;/button&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script &gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      msg: &quot;active&quot;,</span><br><span class="line">      appid: &quot;zyytest&quot;,</span><br><span class="line">      btn_status: false</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">.active &#123;</span><br><span class="line">  color: red;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>动态绑定多个属性(通过不带参数的 v-bind，你可以将它们绑定到单个元素上)</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">  &lt;div v-bind=&quot;objectOfAttrs&quot;&gt;测试class属性&lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script &gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      objectOfAttrs: &#123;</span><br><span class="line">        id: &#x27;container&#x27;,</span><br><span class="line">        class: &#x27;wrapper&#x27;,</span><br><span class="line">        style: &#x27;background-color:green&#x27;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>条件渲染: v-if  v-else</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">    &lt;h3&gt;条件渲染&lt;/h3&gt;</span><br><span class="line">    &lt;div v-if=&quot;type === &#x27;A&#x27;&quot;&gt;</span><br><span class="line">      A</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div v-else-if=&quot;type === &#x27;B&#x27;&quot;&gt;</span><br><span class="line">      B</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div v-else-if=&quot;type === &#x27;C&#x27;&quot;&gt;</span><br><span class="line">      C</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &lt;div v-else&gt;</span><br><span class="line">      Not A/B/C</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script &gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      type: &#x27;C&#x27;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+<img src="images/img_1.png" style="display: block; margin: 0;" />
+
+<blockquote>
+<p>事件处理和传参: 用法：v-on:click&#x3D;”handler” 或 @click&#x3D;”handler”, methods里获取 data 用 this. ;用 e.target.innerHTML 可以修改html value; </p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">&lt;template&gt;</span><br><span class="line">&lt;button @click=&quot;count++&quot;&gt;Add 1&lt;/button&gt;</span><br><span class="line">&lt;button @click=&quot;addCount&quot;&gt;Add 2&lt;/button&gt;</span><br><span class="line">&lt;button @click=&quot;setHtml($event, &#x27;hello&#x27;)&quot;&gt;&lt;/button&gt;</span><br><span class="line">&lt;p&gt;Count is: &#123;&#123; count &#125;&#125;&lt;/p&gt;</span><br><span class="line">&lt;/template&gt;</span><br><span class="line"></span><br><span class="line">&lt;script &gt;</span><br><span class="line">export default &#123;</span><br><span class="line">  data() &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">      count: 0</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br><span class="line">  methods: &#123;</span><br><span class="line">    addCount() &#123;</span><br><span class="line">      this.count += 2</span><br><span class="line">    &#125;,</span><br><span class="line">    // event对象</span><br><span class="line">    setHtml(e, test) &#123;</span><br><span class="line">      e.target.innerHTML = &quot;count num: &quot; + this.count + test</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/script&gt;</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>数组方法变更: 可以使用能改变原数组的方法：1. push()、 2. pop()、 3. unshift()、 4. shift()、 5. splice()、 6. sort()、 7. reverse()；这 7 个方法都被 Vue 重写过，使用它们更新数据能触发页面的重新渲染。<br>&lt;button @click&#x3D;”arr.shift()”&gt;删除数组元素</button><br>&lt;button @click&#x3D;”arr.push(‘z’)”&gt;添加数组元素</button><br>&lt;button @click&#x3D;”arr.splice(0, 1, ‘0’)”&gt;修改数组元素</button><br>替换数组: map, filter()、concat(), slice() 等函数，对原数组变量进行重新赋值,不会渲染页面,想要渲染,需要给原数组重新赋值.</p>
+</blockquote>
+<blockquote>
+<p>挂载应用: 应用实例必须在调用了 .mount() 方法后才会渲染出来。该方法接收一个“容器”参数，可以是一个实际的 DOM 元素或是一个 CSS 选择器字符串,<br>.mount() 方法应该始终在整个应用配置和资源注册完成后被调用。同时请注意，不同于其他资源注册方法，它的返回值是根组件实例而非应用实例。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">html</span><br><span class="line">&lt;div id=&quot;app&quot;&gt;&lt;/div&gt;</span><br><span class="line">js</span><br><span class="line">app.mount(&#x27;#app&#x27;)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>应用配置: 应用实例会暴露一个 .config 对象允许我们配置一些应用级的选项，例如定义一个应用级的错误处理器，用来捕获所有子组件上的错误：</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">app.config.errorHandler = (err) =&gt; &#123;</span><br><span class="line">  /* 处理错误 */</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>注册一个组件,使得 TodoDeleteButton 在应用的任何地方都是可用的</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">js</span><br><span class="line">app.component(&#x27;TodoDeleteButton&#x27;, TodoDeleteButton)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>多个应用实例: 应用实例并不只限于一个。createApp API 允许你在同一个页面中创建多个共存的 Vue 应用，而且每个应用都拥有自己的用于配置和全局资源的作用域。<br>如果你正在使用 Vue 来增强服务端渲染 HTML，并且只想要 Vue 去控制一个大型页面中特殊的一小部分，应避免将一个单独的 Vue 应用实例挂载到整个页面上，而是应该创建多个小的应用实例，将它们分别挂载到所需的元素上去。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">const app1 = createApp(&#123;</span><br><span class="line">  /* ... */</span><br><span class="line">&#125;)</span><br><span class="line">app1.mount(&#x27;#container-1&#x27;)</span><br><span class="line"></span><br><span class="line">const app2 = createApp(&#123;</span><br><span class="line">  /* ... */</span><br><span class="line">&#125;)</span><br><span class="line">app2.mount(&#x27;#container-2&#x27;)</span><br></pre></td></tr></table></figure>
+
+<blockquote>
+<p>声明响应式状态: 在组合式 API 中，使用 ref() 函数来声明响应式状态,ref() 接收参数，并将其包裹在一个带有 .value 属性的 ref 对象中返回.<br>在模板中使用 ref 时，我们不需要附加 .value。</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">import &#123; ref &#125; from &#x27;vue&#x27;</span><br><span class="line">const count = ref(0)</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>要在组件模板中访问 ref，从组件的 setup() 函数中声明并返回它们</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">import &#123; ref &#125; from &#x27;vue&#x27;</span><br><span class="line"></span><br><span class="line">export default &#123;</span><br><span class="line">  // `setup` 是一个特殊的钩子，专门用于组合式 API。</span><br><span class="line">  setup() &#123;</span><br><span class="line">    const count = ref(0)</span><br><span class="line"></span><br><span class="line">    // 将 ref 暴露给模板</span><br><span class="line">    return &#123;</span><br><span class="line">      count</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>也可以直接在事件监听器中改变一个 ref</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">&lt;button @click=&quot;count++&quot;&gt;</span><br><span class="line">  &#123;&#123; count &#125;&#125;</span><br><span class="line">&lt;/button&gt;</span><br></pre></td></tr></table></figure>
+
 
       
     </div>
@@ -217,7 +326,7 @@
 
 
   <nav class="pagination">
-    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/39/">39</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
+    <span class="page-number current">1</span><a class="page-number" href="/page/2/">2</a><span class="space">&hellip;</span><a class="page-number" href="/page/40/">40</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/2/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>

@@ -123,13 +123,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">40</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -155,7 +155,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2017/08/31/svn%E5%91%BD%E4%BB%A4%E8%A1%8C/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2017/09/13/mysql%E5%91%BD%E4%BB%A4%E8%A1%8C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/myhead.png">
@@ -173,7 +173,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2017/08/31/svn%E5%91%BD%E4%BB%A4%E8%A1%8C/" class="post-title-link" itemprop="url">svn命令行</a>
+          <a href="/2017/09/13/mysql%E5%91%BD%E4%BB%A4%E8%A1%8C/" class="post-title-link" itemprop="url">mysql命令行</a>
         </h2>
 
         <div class="post-meta-container">
@@ -184,7 +184,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2017-08-31 17:49:38" itemprop="dateCreated datePublished" datetime="2017-08-31T17:49:38+08:00">2017-08-31</time>
+      <time title="创建时间：2017-09-13 09:48:38" itemprop="dateCreated datePublished" datetime="2017-09-13T09:48:38+08:00">2017-09-13</time>
     </span>
 
   
@@ -198,17 +198,17 @@
     
     <div class="post-body" itemprop="articleBody">
           <ol>
-<li><p>从SVN上检出<br> svn checkout svnPath  </p>
+<li><p>重启服务器上的mysql<br>sudo su -<br>service mysqld restart</p>
 </li>
-<li><p>提交svn<br> svn commit * -m “message”</p>
+<li><p>在当前服务器下连接数据库<br>mysql -uUser -pPassword  </p>
 </li>
-<li><p>误删除文件<br>直接svn up<br>或 svn revert -r version  </p>
+<li><p>查看当前服务器下的数据库<br>show databases;  </p>
 </li>
-<li><p>删除文件后提交<br> svn delete XX<br> 再 svn ci -m “message”    </p>
+<li><p>进入数据库<br>use database1;  </p>
 </li>
-<li><p>查看本地改动了哪些文件<br> svn st</p>
+<li><p>查看当前数据库的表<br>show tables;  </p>
 </li>
-<li><p>本地文件和svn上文件对比<br> svn diff fileName</p>
+<li><p>如果存在某表，删除<br>DROP TABLE IF EXISTS table1;</p>
 </li>
 </ol>
 
@@ -230,7 +230,7 @@
 
 
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/12/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/39/">39</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/14/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/12/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/40/">40</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/14/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>

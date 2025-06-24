@@ -123,13 +123,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">40</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -155,7 +155,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2017/09/19/css%E5%92%8Cjs%E6%94%BE%E5%9C%A8head%E6%A0%87%E7%AD%BE%E4%B8%AD%E8%BF%98%E6%98%AFbody%E4%B8%AD/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2017/09/19/javascript%E7%9A%84%E5%87%A0%E7%A7%8D%E8%BE%93%E5%87%BA%E6%96%B9%E5%BC%8F/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/myhead.png">
@@ -173,7 +173,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2017/09/19/css%E5%92%8Cjs%E6%94%BE%E5%9C%A8head%E6%A0%87%E7%AD%BE%E4%B8%AD%E8%BF%98%E6%98%AFbody%E4%B8%AD/" class="post-title-link" itemprop="url">css和js放在head标签中还是body中</a>
+          <a href="/2017/09/19/javascript%E7%9A%84%E5%87%A0%E7%A7%8D%E8%BE%93%E5%87%BA%E6%96%B9%E5%BC%8F/" class="post-title-link" itemprop="url">javascript几种输出方式区别</a>
         </h2>
 
         <div class="post-meta-container">
@@ -184,7 +184,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2017-09-19 20:45:24" itemprop="dateCreated datePublished" datetime="2017-09-19T20:45:24+08:00">2017-09-19</time>
+      <time title="创建时间：2017-09-19 21:51:02" itemprop="dateCreated datePublished" datetime="2017-09-19T21:51:02+08:00">2017-09-19</time>
     </span>
 
   
@@ -197,22 +197,10 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <p><strong>在HTML body中的JavaScript会在<font color=red>页面加载的时候</font>执行</strong><br><strong>在HTML head中的JavaScript会在<font color=red>被调用的时候</font>才执行</strong><br><strong><font color=red>建议：css在head中引入，js在body尾部引入（这样有利于提升页面的性能，加载速度更快）</font></strong><br><strong>加载顺序：放在head中，页面加载前就加载js了。放在body中，页面加载后才加载js，所以head里面的先加载优先级高</strong></p>
-<hr>
-<p>javascript应该放在哪里？<br>页面中的JavaScript会在浏览器加载页面的时候立即被执行，通常被用来生成页面的内容。写法如下：     </p>
-<blockquote>
-<p>&lt; html &gt;<br>&lt; head &gt;<br>&lt; &#x2F;head &gt;<br>&lt; body &gt;<br>&lt; script type&#x3D;”text&#x2F;javascript” &gt;<br>…<br>&lt; script &gt;<br>&lt; &#x2F;body &gt;<br>&lt; &#x2F;html &gt;</p>
-</blockquote>
-<p>JavaScript放在head中，可以保证脚本在任何调用之前被加载，通常写需调用才执行的脚本或事件触发执行的脚本。写法如下：  </p>
-<blockquote>
-<p>&lt; html &gt;<br>&lt; head &gt;<br>&lt; script type&#x3D;”text&#x2F;javascript” &gt;<br>…<br>&lt; script &gt;   </p>
-</head >   
-</html ></blockquote>
-<p>head中和bosy中可同时放无数的脚本<br>外部js，使用“src”属性指向相应的js文件。写法如下：  </p>
-<blockquote>
-<p>&lt; html &gt;<br>&lt; head &gt;<br>&lt; script src&#x3D;”xx.js” &gt;<br>…<br>&lt; script &gt;<br>&lt; &#x2F;head &gt;<br>&lt; &#x2F;html &gt;</p>
-</blockquote>
-<p>参考：<br><a href="http://www.cnblogs.com/ddyq/archive/2012/03/06/2382816.html">http://www.cnblogs.com/ddyq/archive/2012/03/06/2382816.html</a><br><a href="http://www.imooc.com/qadetail/76717">http://www.imooc.com/qadetail/76717</a>  </p>
+          <p>第一种： alert 将输出到浏览器的警示窗口  </p>
+<p>第二种： console.log 将把文本输出到调试工具的Console标签  </p>
+<p>第三种： document.write 直接输出到html页面里，并被浏览器呈现  </p>
+<p>以上三种方式，可以选择你喜欢的方式来调试</p>
 
       
     </div>
@@ -232,7 +220,7 @@
 
 
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/10/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/page/39/">39</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/12/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/10/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/10/">10</a><span class="page-number current">11</span><a class="page-number" href="/page/12/">12</a><span class="space">&hellip;</span><a class="page-number" href="/page/40/">40</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/12/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>

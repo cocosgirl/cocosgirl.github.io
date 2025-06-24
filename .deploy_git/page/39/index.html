@@ -123,13 +123,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">40</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -155,7 +155,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2017/06/02/git%E5%91%BD%E4%BB%A4%E8%A1%8C/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2017/06/02/hexo%E5%91%BD%E4%BB%A4%E8%A1%8C/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/myhead.png">
@@ -173,7 +173,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2017/06/02/git%E5%91%BD%E4%BB%A4%E8%A1%8C/" class="post-title-link" itemprop="url">git命令行</a>
+          <a href="/2017/06/02/hexo%E5%91%BD%E4%BB%A4%E8%A1%8C/" class="post-title-link" itemprop="url">hexo命令行</a>
         </h2>
 
         <div class="post-meta-container">
@@ -184,7 +184,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2017-06-02 17:25:55" itemprop="dateCreated datePublished" datetime="2017-06-02T17:25:55+08:00">2017-06-02</time>
+      <time title="创建时间：2017-06-02 19:29:38" itemprop="dateCreated datePublished" datetime="2017-06-02T19:29:38+08:00">2017-06-02</time>
     </span>
 
   
@@ -198,37 +198,17 @@
     
     <div class="post-body" itemprop="articleBody">
           <ol>
-<li><p>git clone<br>拉一个分支到当前目录<br>git clone <a href="https://github.com/cocosgirl/diana.git">https://github.com/cocosgirl/diana.git</a></p>
+<li><p>新建页面的hexo命令是：<br>hexo new page “pageName”  </p>
 </li>
-<li><p>git add .<br>把我们要提交的文件的信息添加到索引库中<br>例如：git add html_1_chapter.md</p>
+<li><p>新建博客文章<br>hexo new “文章名称”  #新建文章<br>hexo new post “文章名称”  #新建文章,双引号可以不用</p>
 </li>
-<li><p>git commit<br>git将依据索引库中的内容来进行文件的提交<br>例如：git commit html_1_chapter.md -m “测试本地提交”<br>本地删除文件提交：<br>git commit -a -m “删除不要的文件”</p>
+<li><p>发布博客<br>hexo clean  #清除缓存 网页正常情况下可以忽略此条命令<br>hexo generate  #生成静态页面至public目录</p>
 </li>
-<li><p>git push<br>提交完以后发布<br>发布到分支：<br>例如：git push -u <a href="https://github.com/cocosgirl/cocosgirl.github.io">https://github.com/cocosgirl/cocosgirl.github.io</a> master  </p>
+<li><p>写好之后可以现在本地预览，确定无误之后再部署到Github上<br>hexo server  #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）<br>hexo deploy  #将.deploy目录部署到GitHub  </p>
 </li>
-<li><p>合并分支<br>git pull origin hexo MERGE_HEAD origin&#x2F;master  </p>
+<li><p>hexo命令简写形式<br>hexo n “我的博客” &#x3D;&#x3D; hexo new “我的博客”<br>hexo g &#x3D;&#x3D; hexo generate<br>hexo s &#x3D;&#x3D; hexo server<br>hexo d &#x3D;&#x3D; hexo deploy  </p>
 </li>
-<li><p>设置当前分支<br>首先git checkout -b origin&#x2F;master<br>其次git checkout master<br>即可恢复到master repository的状态，然后就可以pull了  </p>
-</li>
-<li><p>git help &lt;命令&gt;<br>查找命令的帮助信息  </p>
-</li>
-<li><p>git log<br>查看git的日志信息</p>
-</li>
-<li><p>git init<br>创建一个新的代码库或者初始化一个已存在的代码库</p>
-</li>
-<li><p>git rm<br>删除索引或代码库中的文件  </p>
-</li>
-<li><p>git status<br>显示当前git的状态，包括增删改，但是没有提交的信息</p>
-</li>
-<li><p>初始化**目录为本地代码库<br>cd **<br>git init   </p>
-</li>
-<li><p>git fetch<br>从服务器代码库获取数据<br>eg. git fetch origin  </p>
-</li>
-<li><p>git merge origin&#x2F;master<br>合并origin&#x2F;master到本地master分支</p>
-</li>
-<li><p>git pull 命令是git fetch和git merge命令的组合<br>eg. git pull origin master 其中origin是远程代码库名，master是要合并的本地分支</p>
-</li>
-<li><p>git其他常用命令参考<br><a href="http://www.cnblogs.com/cspku/articles/Git_cmds.html">http://www.cnblogs.com/cspku/articles/Git_cmds.html</a></p>
+<li><p>其他<br>hexo help   # 查看帮助<br>hexo version  #查看Hexo的版本<br>hexo deploy -g  #生成加部署<br>hexo server -g  #生成加预览</p>
 </li>
 </ol>
 
@@ -250,7 +230,7 @@
 
 
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/38/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/38/">38</a><span class="page-number current">39</span>
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/38/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/38/">38</a><span class="page-number current">39</span><a class="page-number" href="/page/40/">40</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/40/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>

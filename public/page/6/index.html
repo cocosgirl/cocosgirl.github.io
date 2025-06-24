@@ -123,13 +123,13 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">39</span>
+          <span class="site-state-item-count">40</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">12</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -155,7 +155,7 @@
   
 
   <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2017/10/12/Android%E6%89%8B%E6%9C%BA%E8%B0%83%E8%AF%95/">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2017/12/07/python%E4%B9%8Bos%E6%A8%A1%E5%9D%97/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/myhead.png">
@@ -173,7 +173,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2017/10/12/Android%E6%89%8B%E6%9C%BA%E8%B0%83%E8%AF%95/" class="post-title-link" itemprop="url">Android手机调试</a>
+          <a href="/2017/12/07/python%E4%B9%8Bos%E6%A8%A1%E5%9D%97/" class="post-title-link" itemprop="url">python之os模块</a>
         </h2>
 
         <div class="post-meta-container">
@@ -184,7 +184,7 @@
       </span>
       <span class="post-meta-item-text">发表于</span>
 
-      <time title="创建时间：2017-10-12 20:50:40" itemprop="dateCreated datePublished" datetime="2017-10-12T20:50:40+08:00">2017-10-12</time>
+      <time title="创建时间：2017-12-07 11:40:37" itemprop="dateCreated datePublished" datetime="2017-12-07T11:40:37+08:00">2017-12-07</time>
     </span>
 
   
@@ -197,15 +197,34 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          <ol>
-<li><p>查看adb安装版本<br> adb version</p>
-</li>
-<li><p>查看设备是否连接<br> adb devices</p>
-</li>
-<li><p>查看日志<br> adb logcat | grep “cocos2d-x”</p>
+          <p>python os模块提供了多数操作系统的功能接口函数，对文件和路径进行的操作都要依赖于os模块。</p>
+<p>常见的用法：</p>
+<ol>
+<li>查看当前所在路径  <blockquote>
+<p> ~  python<br>  Python 2.7.10 (default, Feb  7 2017, 00:08:15)<br>  &gt;&gt;&gt; import os<br>  &gt;&gt;&gt; os.getcwd()<br>  ‘&#x2F;Users&#x2F;tuyoo’</p>
+</blockquote>
 </li>
 </ol>
-<p>安装ADB参考文档：<br><a href="http://www.jianshu.com/p/1b3fb1f27b67">http://www.jianshu.com/p/1b3fb1f27b67</a></p>
+<blockquote>
+<p> &gt;&gt;&gt; os.path.abspath(‘.’)<br> ‘&#x2F;Users&#x2F;tuyoo’</p>
+</blockquote>
+<ol start="2">
+<li><p>列举路径下的所有文件<br>  os.listdir(path)</p>
+</li>
+<li><p>os.path.split(path):将路径分解为(文件夹,文件名)，返回的是元组类型。</p>
+</li>
+<li><p>os.path.join(path1,path2,…):将path进行组合，若其中有绝对路径，则之前的path将被删除。</p>
+</li>
+<li><p>os.path.dirname(path):返回path中的文件夹部分，结果不包含’&#39;</p>
+</li>
+<li><p>os.path.basename(path):返回path中的文件名。</p>
+</li>
+<li><p>查看文件时间<br>  os.path.getmtime(path):文件或文件夹的最后修改时间，从新纪元到访问时的秒数。<br> os.path.getatime(path):文件或文件夹的最后访问时间，从新纪元到访问时的秒数。<br> os.path.getctime(path):文件或文件夹的创建时间，从新纪元到访问时的秒数。</p>
+</li>
+<li><p>os.path.getsize(path):查看文件或文件夹的大小，若是文件夹返回0。</p>
+</li>
+</ol>
+<p>参考地址：<br><a href="https://www.cnblogs.com/emily-qin/p/7001152.html">https://www.cnblogs.com/emily-qin/p/7001152.html</a><br><a href="https://www.cnblogs.com/yufeihlf/p/6179547.html">https://www.cnblogs.com/yufeihlf/p/6179547.html</a></p>
 
       
     </div>
@@ -225,7 +244,7 @@
 
 
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/5/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/39/">39</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/7/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" title="上一页" aria-label="上一页" href="/page/5/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/5/">5</a><span class="page-number current">6</span><a class="page-number" href="/page/7/">7</a><span class="space">&hellip;</span><a class="page-number" href="/page/40/">40</a><a class="extend next" rel="next" title="下一页" aria-label="下一页" href="/page/7/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>
